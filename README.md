@@ -1,108 +1,326 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Paris Tours
 
-Welcome tymaestro,
+Paris Tours is an e-commerce website that allows users to browse potential tours of Paris and the surrounding area. Users can add tours to their basket and checkout including all e-commerce functionality.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Responsive Pages](add responsive pages here!)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
 
-## Gitpod Reminders
+ADD LINK TO LIVE SITE HERE!!!
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## User Stories
+<br>
 
-`python3 -m http.server`
+### Logged-Out User
+<br>
 
-A blue button should appear to click: _Make Public_,
+As a standard (not logged-in) user, I would like to:
+<br>
 
-Another blue button should appear to click: _Open Browser_.
+1. View the landing page and know that I'm on a website for tourists to Paris who want a guided tour of the city/suburbs
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+2. View available tours
 
-A blue button should appear to click: _Make Public_,
+3. Have a unique sign-up option with username and password
+<br>
+<br>
 
-Another blue button should appear to click: _Open Browser_.
+### Logged-In User
+<br>
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+As a registered (logged-in) user, I would like to:
+<br>
 
-To log into the Heroku toolbelt CLI:
+1. Have a login option to log in to my previously registered account/profile
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+2. Choose from a range of tours and add them to my basket
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+3. Add a review of my tour once it is completed
 
-------
+4. View my order history
 
-## Release History
+5. 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+6. Choose a date and time for tour
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+7. 
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+8. 
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+9. 
+<br>
+<br>
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+## Project Goals
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+- Create a platform for exercise enthusiasts to come together and share their activities and passion for exercise and the outdoors. This will be achieved through CRUD functionality to create activities (with the ability to both edit and delete the chosen activity) that allow for other users to comment and interact with fellow users of the site.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+- Create a website for people in search of a walking or cycling tour of Paris and the suburbs. 
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+## Flowchart
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+![Paris Tours Flowchart](ADD FLOWCHART HERE!!!)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+## Entity Relationship Diagram
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+![Entity Relationship Diagram](ADD ENTITY RELATIONSHIP DIAGRAM HERE!!!)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Wireframes
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+ADD WIREFRAMES HERE!!!
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+[Sign-Up Web](/media/readme/wireframes/signup-web.png)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+[Sign-Up iPad](/media/readme/wireframes/signup-ipad.png)
 
-------
+[Sign-Up Phone](/media/readme/wireframes/signup-phone.png)
 
-## FAQ about the uptime script
+## Agile Methodology
 
-**Why have you added this script?**
+The agile development of this project used issues in the project environment on [Github](ADD LINK TO USER STORIES HERE!!!)
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+## Features
 
-**How will this affect me?**
+### Navbar
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+EDIT!!!
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+The navigation bar gives you access to the products page as well as an opportunity to either login with a previously created account or create an account via the sign up option.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+![Navbar Logged-Out](LINK!!!)
 
-**So….?**
+The navigation bar once you are logged in gives you the opportunity to add products to your basket as well as log out of your account.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+![Navbar Logged-In](LINK!!!)
 
-**Can I opt out?**
+### Sign Up Page
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+The sign up page allows you to create an account by providing a username and password for authentication.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+![Sign-Up Page](LINK!!!)
 
-**Anything more?**
+### Login Page
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+As with the sign up page, the login page allows previously registered users to access the extra functionality that having an account provides.
 
----
+![Login Page](LINK!!!)
 
-Happy coding!
+### Logout Page
+
+The logout page allows you to confirm if you are sure you would like to logout
+
+![Logout Page](LINK!!!)
+
+### Home Page
+
+The home page welcomes users to the site and gives information on the concept behind the site and encourages you to sign-up to gain access to cool features where you can purchase products and leave reviews.
+
+![Home Page](LINK!!!)
+
+### Products Page
+
+This page presents an ordered and paginated list of activities posted by users. Visible is the title and excerpt of the activity. These activities are public but an account must be created to leave a comment or create your own activities. You can also search for a specific activity using the search bar at the top right of the page.
+
+![Products Page](LINK!!!)
+
+### Products Detail Page
+
+The activity detail page presents the selected activtiy in detail including its title, excerpt, content and comments left by users.
+
+![Products Detail Page](LINK!!!)
+
+### Create Review Page
+
+The create comment page is shown as a form where you can leave a comment on the selected post.
+
+![Create Review Page](LINK!!!)
+
+### Edit Review Page
+
+The edit activity page displays your activity as a form, pre-populated with the details and content previously provided so that you can edit your post.
+
+![Edit Review Page](LINK!!!)
+
+### Delete Review Page
+
+The delete activity page displays a warning (defensive programming) to ensure that you are certain of your choice to delete the chosen activity and are aware of the consequences.
+
+![Delete Review Page](LINK!!!)
+
+### 400 Error Page
+
+The 400 error page displays a UX-friendly error message and the option to "return to safety".
+
+### 403 Error Page
+
+The 403 error page displays a UX-friendly error message and the option to "return to safety".
+
+![403 Error Page](LINK!!!)
+
+### 404 Error Page
+
+The 404 error page displays a UX-friendly error message and the option to "return to safety".
+
+![404 Error Page](LINK!!!)
+
+### 500 Error Page
+
+The 500 error page displays a UX-friendly error message and the option to "return to safety".
+
+## Features Left To Implement
+
+
+
+## Languages Used
+
+Python 3.0
+
+CSS
+
+HTML
+
+## Libraries, Frameworks, and Programs Used
+
+Django.
+
+Github was used for version control to store commit history.
+
+Heroku was used to deploy our final project.
+
+Balsamiq was used for wireframes.
+
+FontAwesome for social media icons in footer.
+
+Stripe was used for payments.
+
+AWS was used to host media and static files.
+
+## Testing
+
+### Validator Testing
+
+Python: Several "line too long" errors were returned when passing through the official [Pep8](http://pep8online.com/) linter.
+
+These refer to:
+
+- 
+
+- 
+
+HTML: No errors were returned when passing through the official [W3C](https://validator.w3.org/) validator.
+
+CSS: No errors were returned when passing through the official [Jigsaw](https://jigsaw.w3.org/css-validator/) validator.
+
+<hr>
+
+### HTML Validation
+
+
+
+<hr>
+
+### CSS Validation
+
+[CSS Page](LINK!!!)
+
+<hr>
+
+### Python Validation
+
+#### Shop Project
+
+[Activities URLS Page](/media/readme/pythonvalidation/activities-urls-valid.png)
+
+[Activities ASGI Page](/media/readme/pythonvalidation/asgi-valid.png)
+
+[Activities Settings Page](/media/readme/pythonvalidation/settings-valid.png)
+
+[Activities WSGI Page](/media/readme/pythonvalidation/wsgi-valid.png)
+
+<hr>
+
+
+
+<hr>
+
+### Testing and debugging code
+
+I have used Docstrings throughout my code to identify each function and its purpose.
+<br>
+
+
+
+## Lighthouse Accessibility
+
+ADD LINKS TO LIGHTHOUSE SCREENSHOTS!!!
+
+## Bug Fixes
+
+- 
+
+- 
+
+- 
+
+- 
+
+## Deployment
+
+### Heroku Deployment
+
+1. Create a new app in the Heroku dashboard. Choose a name and location for your app.
+
+2. Click the resources tab to add the Heroku Postgres database.
+
+3. Click on the settings tab and reveal config vars. Copy the DATABASE_URL and paste it into the env.py file in your project. Make sure that the env.py file is in the .gitignore file.
+
+4. Add a SECRET_KEY both to the env.py file and in the config vars on Heroku.
+
+5. In the Gitpod settings.py file, remove the insecure SECRET_KEY and replace it with the environment variable (SECRET_KEY) that was created.
+
+6. Replace existing DATABASES section in settings.py file with the DATABASE_URL environment variable that is located in the env.py file.
+
+7. Ensure that all static and files have been added to the settings.py file in Gitpod.
+
+8. Add the TEMPLATES_DIR to settings.py file in Gitpod and link it in the TEMPLATES section.
+
+9. Make sure that the project name for the Heroku app has been added as an allowed host in Gitpod.
+
+10. Ensure to create a Procfile and add web: gunicorn activities.wsgi to this file
+
+11. Make sure that the DEBUG flag is set to False in settings.py file in Gitpod
+
+12. Add X_FRAME OPTIONS = 'SAMEORIGIN' to the settings.py file to ensure that the Summernote editor works once the project is deployed.
+
+13. Make sure that all dependencies have been added to the requirements.txt file using the command pip3 freeze > requirements.txt
+
+If deploying through the CLI:
+
+Using the CLI, enter the following commands to deploy to Heroku
+
+1. Login to Heroku using the command heroku login -i
+
+2. Enter your email address and password
+
+3. Find the relevant app using the command heroku apps
+
+4. Set the Heroku remote using the command heroku git:remote -a <app_name>
+
+5. Add, commit and push to Github using the command git add . && git commit -m "Deploy to Heroku via CLI"
+
+6. Push to both Github and Heroku using the command git push origin main (for Github) and the command git push heroku main (for Heroku)
+
+## Credits
+
+[Bootstrap](https://getbootstrap.com/) for some layout and styling features.
+
+[TableConvert](https://tableconvert.com/markdown-generator) for the creation of tables in markdown.
+
+## Acknowledgements
+
+A very big thank you to my mentor Daisy McGirr who gave me very helpful feedback and was very encouraging during our mentor sessions.
+
+Also, a big thank you to the Slack community over the course of this entire module.
+
+Stack Overflow for any troubleshooting over the course of this project.
+
+Django documentation for setup, use of allauth and insight into class-based views and forms.
