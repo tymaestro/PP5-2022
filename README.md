@@ -68,11 +68,53 @@ As a registered (logged-in) user, I would like to:
 
 ADD WIREFRAMES HERE!!!
 
-[Sign-Up Web](/media/readme/wireframes/signup-web.png)
+[Home Web](/media/readme/wireframes/home-wire-web.png)
 
-[Sign-Up iPad](/media/readme/wireframes/signup-ipad.png)
+[Home iPad](/media/readme/wireframes/home-wire-ipad.png)
 
-[Sign-Up Phone](/media/readme/wireframes/signup-phone.png)
+[Home iPhone](/media/readme/wireframes/home-wire-iphone.png)
+
+[Basket Web](/media/readme/wireframes/basket-wire-web.png)
+
+[Basket iPad](/media/readme/wireframes/basket-wire-ipad.png)
+
+[Basket iPhone](/media/readme/wireframes/basket-wire-iphone.png)
+
+[Newsletter Web](/media/readme/wireframes/newsletter-wire-web.png)
+
+[Newsletter iPad](/media/readme/wireframes/newsletter-wire-ipad.png)
+
+[Newsletter iPhone](/media/readme/wireframes/newsletter-wire-iphone.png)
+
+[Payment Web](/media/readme/wireframes/payment-wire-web.png)
+
+[Payment iPad](/media/readme/wireframes/payment-wire-ipad.png)
+
+[Payment iPhone](/media/readme/wireframes/payment-wire-iphone.png)
+
+[Profile Web](/media/readme/wireframes/profile-wire-web.png)
+
+[Profile iPad](/media/readme/wireframes/profile-wire-ipad.png)
+
+[Profile iPhone](/media/readme/wireframes/profile-wire-iphone.png)
+
+[Tour Detail Web](/media/readme/wireframes/tour-detail-web.png)
+
+[Tour Detail iPad](/media/readme/wireframes/tour-detail-wire-ipad.png)
+
+[Tour Detail iPhone](/media/readme/wireframes/tour-detail-web-iphone.png)
+
+[Tours Web](/media/readme/wireframes/tours-wire-web.png)
+
+[Tours iPad](/media/readme/wireframes/tours-wire-ipad.png)
+
+[Tours iPhone](/media/readme/wireframes/tours-wire-iphone.png)
+
+[Sign-Up Web](/media/readme/wireframes/sign-up-wire-web.png)
+
+[Sign-Up iPad](/media/readme/wireframes/sign-up-wire-ipad.png)
+
+[Sign-Up iPhone](/media/readme/wireframes/sign-up-wire-iphone.png)
 
 ## Agile Methodology
 
