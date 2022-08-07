@@ -1,0 +1,6 @@
+body {
+    background: url('/media/paris-image.jpg') no-repeat;
+    background-size: cover;
+    background-color: azure;
+    text-align: center;
+}
