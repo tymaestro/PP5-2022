@@ -24,13 +24,13 @@ class Tour(models.Model):
         'Guide', null=True, blank=True, on_delete=models.SET_NULL
         )
     tour_title = models.CharField(max_length=254)
-    tour_distance = models.DecimalField(max_digits=5, decimal_places=2)
+    tour_distance = models.PositiveSmallIntegerField()
     tour_description = models.TextField()
-    tour_time_length = models.DecimalField(
-        max_digits=5, decimal_places=2, null=True, blank=True
+    tour_time_length = models.PositiveSmallIntegerField(
+        null=True, blank=True
         )
-    tour_speed = models.DecimalField(
-        max_digits=4, decimal_places=2, null=True, blank=True
+    tour_speed = models.PositiveSmallIntegerField(
+        null=True, blank=True
         )
     tour_price = models.DecimalField(max_digits=6, decimal_places=2)
 
