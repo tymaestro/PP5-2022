@@ -16,7 +16,7 @@
                         <a href="#">
                             <img class="card-img-top img-fluid" src="{{ tour.tour_image.url }}" alt="{{ tour.tour_title }}">
                         </a>
-                        <a href="#">
+                        <a href="{% url 'tour_detail' tour.id %}">
                             <h2 class="card-title">{{ tour.tour_title }}</h2>
                         </a>
                         <p class="card-text">Tour Guide: {{ tour.guide }}</p>

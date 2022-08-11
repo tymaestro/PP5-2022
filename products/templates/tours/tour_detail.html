@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="container">
+    <div>
+
+        <!-- Tour Detail -->
+        <div class="card card-body">
+            <a href="#">
+                <img class="img-thumbnail image-detail" src="{{ tour.tour_image.url }}" alt="{{ tour.tour_title }}">
+            </a>
+            <h1>{{ tour.tour_title }}</h1>
+            <hr>
+            <p>{{ tour.tour_description }}</p>
+            <p class="card-text text-muted h6">Tour Guide: {{ tour.guide }} | Price: €{{ tour.tour_price }}</p>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

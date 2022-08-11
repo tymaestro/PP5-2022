@@ -8,3 +8,8 @@ body {
 .main-container {
     min-height: calc(100vh);
 }
+
+.image-detail {
+    height: 450px;
+    width: 55%;
+}
