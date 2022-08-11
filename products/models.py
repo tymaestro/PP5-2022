@@ -33,6 +33,7 @@ class Tour(models.Model):
         null=True, blank=True
         )
     tour_price = models.DecimalField(max_digits=6, decimal_places=2)
+    tour_image = models.ImageField(null=True, blank=True)
 
     def __str__(self):
         return self.tour_title

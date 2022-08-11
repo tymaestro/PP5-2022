@@ -14,12 +14,15 @@
                 <div class="card mb-3">
                     <div class="card-body">
                         <a href="#">
+                            <img class="card-img-top img-fluid" src="{{ tour.tour_image.url }}" alt="{{ tour.tour_title }}">
+                        </a>
+                        <a href="#">
                             <h2 class="card-title">{{ tour.tour_title }}</h2>
                         </a>
                         <p class="card-text">Tour Guide: {{ tour.guide }}</p>
                         <hr />
-                        <p class="card-text text-muted h6">{{ tour.tour_speed }} km/h</p>
-                        <p class="card-text text-muted h6">€ {{ tour.tour_price }}</p>
+                        <p class="card-text text-muted h6">Average Speed: {{ tour.tour_speed }} km/h</p>
+                        <p class="card-text text-muted h6">Price: € {{ tour.tour_price }}</p>
 
                     </div>
                 </div>
