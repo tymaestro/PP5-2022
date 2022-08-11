@@ -10,6 +10,22 @@ body {
 }
 
 .image-detail {
-    height: 450px;
-    width: 55%;
+    width: 65%;
+}
+
+.card-detail {
+    height: 460px;
+    width: 78%;
+}
+
+.card-margin {
+    margin: 20px 0px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 540px) {
+    .image-detail {
+        width: auto;
+    }
 }
