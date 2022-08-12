@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-sm-6">
+        <div class="card checkout-card">
+            <div class="card-body">
+                <h5 class="card-title">Shopping Basket</h5>
+                <p class="card-text">Include shopping basket info (quantity, price etc.)</p>
+                <a href="#" class="btn btn-primary">Book Another Tour!</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="card checkout-card">
+            <div class="card-body">
+                <h5 class="card-title">Order Summary</h5>
+                <p class="card-text">Include order summary info (quantity, individual price, grand total etc.)</p>
+                <a href="#" class="btn btn-primary">Checkout</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

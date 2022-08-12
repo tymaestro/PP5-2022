@@ -22,6 +22,10 @@ body {
     margin: 20px 0px;
 }
 
+.checkout-card {
+    margin: 30px;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 540px) {
