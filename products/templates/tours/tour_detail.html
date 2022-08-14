@@ -12,6 +12,7 @@
             <h5 class="card-title">{{ tour.tour_title }}</h5>
             <p class="card-text">{{ tour.tour_description }}</p>
             <p class="card-text">Tour Guide: {{ tour.guide }} | Price: €{{ tour.tour_price }}</p>
+            <a href="{% url 'basket' %}" class="btn btn-primary mx-auto button-detail">Add To Basket!</a>
         </div>
     </div>
 </div>

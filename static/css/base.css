@@ -13,9 +13,24 @@ body {
     width: 65%;
 }
 
+.tour-image-detail {
+    max-width: 250px;
+}
+
 .card-detail {
-    height: 460px;
-    width: 78%;
+    height: auto;
+    width: 500px;
+}
+
+.button-detail {
+    width: 30%;
+    margin-top: 20px;
+}
+
+.basket-margin {
+    padding-top: 250px;
+    width: 65%;
+    margin: auto;
 }
 
 .card-margin {

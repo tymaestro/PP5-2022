@@ -14,7 +14,7 @@
                 <div class="card mb-3">
                     <div class="card-body">
                         <a href="{% url 'tour_detail' tour.id %}">
-                            <img class="card-img-top img-fluid" src="{{ tour.tour_image.url }}" alt="{{ tour.tour_title }}">
+                            <img class="card-img-top img-fluid tour-image-detail" src="{{ tour.tour_image.url }}" alt="{{ tour.tour_title }}">
                         </a>
                         <a href="{% url 'tour_detail' tour.id %}">
                             <h2 class="card-title">{{ tour.tour_title }}</h2>
