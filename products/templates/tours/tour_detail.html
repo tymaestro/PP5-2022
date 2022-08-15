@@ -12,7 +12,7 @@
             <h5 class="card-title">{{ tour.tour_title }}</h5>
             <p class="card-text">{{ tour.tour_description }}</p>
             <p class="card-text">Tour Guide: {{ tour.guide }} | Price: €{{ tour.tour_price }}</p>
-            <form class="form-inline" action="" method="POST">
+            <form class="form-inline" action="{% url 'add_to_basket' tour.id %}" method="POST">
                 {% csrf_token %}
                 <span>Quantity: </span>
                 <input class="form-inline qty_input mb-2 mr-sm-2" type="number" name="quantity" value="1"
@@ -21,6 +21,7 @@
                     <input type="submit" class="btn btn-primary mx-auto mb-2 mr-sm-2 button-detail" value="Add to Basket!">
                     <a href="{% url 'tours' %}" class="btn btn-primary mx-auto mb-2 mr-sm-2 button-detail">Add Another Tour!</a>
                 </div>
+                <input type="hidden" name="redirect_url" value="{{ request.path }}">
             </form>
         </div>
     </div>
