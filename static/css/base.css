@@ -10,7 +10,7 @@ body {
 }
 
 .image-detail {
-    width: 65%;
+    max-width: 700px;
 }
 
 .tour-image-detail {
@@ -18,8 +18,9 @@ body {
 }
 
 .card-detail {
+    width: 100%;
+    max-width: 450px;
     height: auto;
-    width: 500px;
 }
 
 .button-detail {
