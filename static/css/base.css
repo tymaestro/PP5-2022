@@ -13,19 +13,23 @@ body {
     max-width: 700px;
 }
 
+#form-dimensions {
+    max-width: 150px;
+}
+
 .tour-image-detail {
     max-width: 250px;
 }
 
 .card-detail {
     width: 100%;
-    max-width: 450px;
+    max-width: 400px;
     height: auto;
 }
 
 .button-detail {
     width: 30%;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .basket-margin {
@@ -35,7 +39,7 @@ body {
 }
 
 .card-margin {
-    margin: 20px 0px;
+    margin: 30px 0px;
 }
 
 .checkout-card {
