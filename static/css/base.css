@@ -43,6 +43,10 @@ body {
     height: auto;
 }
 
+.navbar-margin {
+    margin-left: 16px;
+}
+
 .card-margin {
     margin: 30px 0px;
 }
