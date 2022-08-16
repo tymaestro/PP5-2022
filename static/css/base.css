@@ -38,6 +38,11 @@ body {
     margin: auto;
 }
 
+.image-basket-detail {
+    max-width: 100px;
+    height: auto;
+}
+
 .card-margin {
     margin: 30px 0px;
 }

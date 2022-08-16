@@ -5,34 +5,55 @@
 {% block content %}
 
 {% if basket_items %}
-    <div class="row">
-        <div class="col-sm-6">
-            <div class="card checkout-card">
-                <div class="card-body">
-                    <h5 class="card-title">Shopping Basket</h5>
-                    <p class="card-text">{{ basket_items }}</p>
-                    <a href="{% url 'tours' %}" class="btn btn-primary">Book Another Tour!</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6">
-            <div class="card checkout-card">
-                <div class="card-body">
-                    <h5 class="card-title">Order Summary</h5>
-                    <p class="card-text">Include order summary info (quantity, individual price, grand total etc.)</p>
-                    <a href="#" class="btn btn-primary">Checkout</a>
-                </div>
+<div class="row">
+    <div class="col-sm-6">
+        <div class="card checkout-card">
+            <div class="card-body">
+                <h5 class="card-title">Shopping Basket</h5>
+                {% for basket_item in basket_items %}
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <th scope="row">
+                                <img class="img-thumbnail image-basket-detail" src="{{ basket_item.tour.tour_image.url }}" alt="">
+                            </th>
+                            <td>{{ basket_item.tour.tour_title }}</td>
+                            <td>{{ basket_item.quantity }}</td>
+                            <td>€{{ basket_item.tour.tour_price }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                {% endfor %}
+                <a href="{% url 'tours' %}" class="btn btn-primary">Book Another Tour!</a>
             </div>
         </div>
     </div>
+    <div class="col-sm-6">
+        <div class="card checkout-card">
+            <div class="card-body">
+                <h5 class="card-title">Order Summary</h5>
+                <p class="card-text">Include order summary info (quantity, individual price, grand total etc.)</p>
+                <a href="#" class="btn btn-primary">Checkout</a>
+            </div>
+        </div>
+    </div>
+</div>
 {% else %}
 
-    <div class="basket-margin">
-        <div class="card card-body mx-auto image-detail">
-            <h5 class="card-title">Your Tour Basket Is Empty</h5>
-            <a href="{% url 'tours' %}" class="btn btn-primary mx-auto button-detail">Book A Tour!</a>
-        </div>
+<div class="basket-margin">
+    <div class="card card-body mx-auto image-detail">
+        <h5 class="card-title">Your Tour Basket Is Empty</h5>
+        <a href="{% url 'tours' %}" class="btn btn-primary mx-auto button-detail">Book A Tour!</a>
     </div>
+</div>
 
 {% endif %}
 
