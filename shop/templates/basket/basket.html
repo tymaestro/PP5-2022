@@ -11,26 +11,28 @@
             <div class="card-body">
                 <h5 class="card-title">Shopping Basket</h5>
                 {% for basket_item in basket_items %}
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col"></th>
-                            <th scope="col">Title</th>
-                            <th scope="col">Quantity</th>
-                            <th scope="col">Price</th>
-                        </tr>
-                    </thead>
-                    <tbody class="table-group-divider">
-                        <tr>
-                            <th scope="row">
-                                <img class="img-thumbnail image-basket-detail" src="{{ basket_item.tour.tour_image.url }}" alt="">
-                            </th>
-                            <td>{{ basket_item.tour.tour_title }}</td>
-                            <td>{{ basket_item.quantity }}</td>
-                            <td>€{{ basket_item.tour.tour_price }}</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Title</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Price</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                            <tr>
+                                <th scope="row">
+                                    <img class="img-thumbnail image-basket-detail" src="{{ basket_item.tour.tour_image.url }}" alt="">
+                                </th>
+                                <td>{{ basket_item.tour.tour_title }}</td>
+                                <td>{{ basket_item.quantity }}</td>
+                                <td>€{{ basket_item.tour.tour_price }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
                 {% endfor %}
                 <a href="{% url 'tours' %}" class="btn btn-primary">Book Another Tour!</a>
             </div>

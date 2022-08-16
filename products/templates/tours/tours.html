@@ -11,7 +11,7 @@
             <!-- Tours Iteration -->
             {% for tour in tours %}
             <div class="col-sm-4">
-                <div class="card mb-3">
+                <div class="card mb-3 card-height">
                     <div class="card-body">
                         <a href="{% url 'tour_detail' tour.id %}">
                             <img class="card-img-top img-fluid tour-image-detail" src="{{ tour.tour_image.url }}" alt="{{ tour.tour_title }}">
