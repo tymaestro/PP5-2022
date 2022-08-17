@@ -11,6 +11,12 @@ class Level(models.Model):
 
 class Guide(models.Model):
     name = models.CharField(max_length=254)
+    certificates = models.CharField(max_length=254)
+    description = models.TextField()
+    experience = models.PositiveSmallIntegerField(
+        null=True, blank=True
+    )
+    nationality = models.CharField(max_length=254)
 
     def __str__(self):
         return self.name
