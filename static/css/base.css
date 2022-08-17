@@ -21,6 +21,15 @@ body {
     max-width: 250px;
 }
 
+.auth-card {
+    width: 50%;
+    margin-top: 100px;
+}
+
+.auth-button {
+    margin-bottom: 20px;
+}
+
 .card-detail {
     width: 100%;
     max-width: 400px;
@@ -63,8 +72,20 @@ body {
 
 /* Media Queries */
 
+@media screen and (max-width: 740px) {
+    .auth-card {
+        width: 80%;
+        margin-top: 60px;
+    }
+}
+
 @media screen and (max-width: 540px) {
     .image-detail {
         width: auto;
+    }
+
+    .auth-card {
+        width: 98%;
+        margin-top: 60px;
     }
 }
