@@ -34,6 +34,13 @@
                     </table>
                 </div>
                 {% endfor %}
+                <div>
+                    <span class="total-alignment">Total:</span>
+                    <span class="total">
+                        €{{ total|floatformat:2 }}
+                    </span>
+                </div>
+                <hr>
                 <a href="{% url 'tours' %}" class="btn btn-primary">Book Another Tour!</a>
             </div>
         </div>
