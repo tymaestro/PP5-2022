@@ -31,6 +31,10 @@ body {
     margin-top: 100px;
 }
 
+.table-align {
+    text-align: left;
+}
+
 .auth-button {
     margin-bottom: 20px;
 }
@@ -81,6 +85,10 @@ body {
     .auth-card {
         width: 80%;
         margin-top: 60px;
+    }
+
+    .checkout-card {
+        margin: 10px 0px 0px 0px;
     }
 }
 

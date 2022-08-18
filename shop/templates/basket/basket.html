@@ -6,7 +6,7 @@
 
 {% if basket_items %}
 <div class="row">
-    <div class="col-sm-6">
+    <div class="col-sm-8 mx-auto">
         <div class="card checkout-card">
             <div class="card-body">
                 <h5 class="card-title">Shopping Basket</h5>
@@ -23,7 +23,7 @@
                         </thead>
                         <tbody class="table-group-divider">
                             <tr>
-                                <th scope="row">
+                                <th scope="row" class="table-align">
                                     <img class="img-thumbnail image-basket-detail" src="{{ basket_item.tour.tour_image.url }}" alt="">
                                 </th>
                                 <td>{{ basket_item.tour.tour_title }}</td>
@@ -35,21 +35,13 @@
                 </div>
                 {% endfor %}
                 <div>
-                    <span class="total-alignment">Total:</span>
+                    <span class="total-alignment"><strong>Total:</strong></span>
                     <span class="total">
-                        €{{ total|floatformat:2 }}
+                        <strong>€{{ total|floatformat:2 }}</strong>
                     </span>
                 </div>
                 <hr>
                 <a href="{% url 'tours' %}" class="btn btn-primary">Book Another Tour!</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-6">
-        <div class="card checkout-card">
-            <div class="card-body">
-                <h5 class="card-title">Order Summary</h5>
-                <p class="card-text">Include order summary info (quantity, individual price, grand total etc.)</p>
                 <a href="#" class="btn btn-primary">Checkout</a>
             </div>
         </div>
