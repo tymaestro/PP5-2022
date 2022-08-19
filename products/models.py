@@ -40,14 +40,6 @@ class Tour(models.Model):
         )
     tour_price = models.DecimalField(max_digits=6, decimal_places=2)
     tour_image = models.ImageField(null=True, blank=True)
-    tour_quantity = models.PositiveSmallIntegerField(
-        default=0, null=True, blank=True
-        )
-
-    @property
-    def get_subtotal(self):
-        subtotal = self.tour_price * self.tour_quantity
-        return subtotal
 
     def __str__(self):
         return self.tour_title

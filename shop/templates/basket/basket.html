@@ -28,7 +28,7 @@
                                 </th>
                                 <td>{{ basket_item.tour.tour_title }}</td>
                                 <td>{{ basket_item.quantity }}</td>
-                                <td>€{{ basket_item.tour.tour_price }}</td>
+                                <td>€{{ basket_item.subtotal|floatformat:2 }}</td>
                             </tr>
                         </tbody>
                     </table>
