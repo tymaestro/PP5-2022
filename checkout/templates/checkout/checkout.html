@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+{% if basket_items %}
+<div class="row">
+    <div class="col-sm-6">
+        <div class="card checkout-card">
+            <div class="card-body">
+                <h5 class="card-title">Checkout</h5>
+                {% for basket_item in basket_items %}
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Title</th>
+                                <th scope="col">Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                            <tr>
+                                <th scope="row" class="table-align"></th>
+                                <td>{{ basket_item.tour.tour_title }}</td>
+                                <td>{{ basket_item.quantity }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                {% endfor %}
+                <div>
+                    <span class="total-alignment"><strong>Grand Total:</strong></span>
+                    <span class="total">
+                        <strong>€{{ total|floatformat:2 }}</strong>
+                    </span>
+                </div>
+                <hr>
+                <a href="{% url 'view_basket' %}" class="btn btn-primary">Update Basket</a>
+                <a href="#" class="btn btn-primary">Checkout</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="card checkout-card">
+            <div class="card-body">
+                <h5 class="card-title">Please fill out the form below to complete your order</h5>
+                <form action="{% url 'checkout' %}" method="POST" id="payment-form">
+                    {% csrf_token %}
+                    <fieldset class="rounded px-3 mb-5">
+                        <legend class="fieldset-label small text-black px-2 w-auto">Details</legend>
+                        {{ order_form.full_name }}
+                        {{ order_form.email }}
+                        <div class="form-check form-check-inline float-right mr-0">
+							{% if user.is_authenticated %}
+								<label class="form-check-label" for="id-save-info">Save this delivery information to my profile</label>
+                                <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info" checked>
+							{% else %}
+								<label class="form-check-label" for="id-save-info">
+                                    <a class="text-info" href="{% url 'account_signup' %}">Create an account</a> or 
+                                    <a class="text-info" href="{% url 'account_login' %}">login</a> to save this information
+                                </label>
+							{% endif %}
+						</div>
+                    </fieldset>
+                    <fieldset class="px-3">
+                        <legend class="fieldset-label small text-black px-2 w-auto">Payment</legend>
+                        <!-- A Stripe card element will go here -->
+                        <div class="mb-3" id="card-element"></div>
+
+                        <!-- Used to display form errors -->
+                        <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
+                    </fieldset>
+
+                    <div class="submit-button text-right mt-5 mb-2">                    
+						<button id="submit-button" class="btn btn-black rounded-0">
+							<span class="font-weight-bold">Complete Order</span>
+						</button>
+						<p class="small text-danger my-0">
+							<span>Your card will be charged <strong>${{ total|floatformat:2 }}</strong></span>
+						</p>
+					</div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% else %}
+
+<div class="basket-margin">
+    <div class="card card-body mx-auto image-detail">
+        <h5 class="card-title">You have nothing to checkout. Please add to your basket!</h5>
+    </div>
+</div>
+
+{% endif %}
+
+{% endblock %}
