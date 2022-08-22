@@ -26,6 +26,10 @@ body {
     max-width: 250px;
 }
 
+.input-margins {
+    margin: 10px;
+}
+
 .auth-card {
     width: 50%;
     margin-top: 100px;
