@@ -35,6 +35,10 @@ body {
     margin-top: 100px;
 }
 
+.row-margins {
+    margin-bottom: 5px;
+}
+
 .table-align {
     text-align: left;
 }
