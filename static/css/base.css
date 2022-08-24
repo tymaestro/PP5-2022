@@ -73,8 +73,26 @@ body {
     margin-left: 16px;
 }
 
+.decoration {
+    text-decoration: underline;
+}
+
+.order-card-image {
+    border: solid black 1px;
+    background-color: aliceblue;
+    padding: 10px;
+}
+
 .card-margin {
     margin: 30px 0px;
+}
+
+.order-summary {
+    margin-bottom: 20px;
+}
+
+.order-card {
+    padding: 20px;
 }
 
 .card-height {
