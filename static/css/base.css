@@ -77,6 +77,10 @@ body {
     text-decoration: underline;
 }
 
+.font-decoration {
+    font-weight: bold;
+}
+
 .order-card-image {
     border: solid black 1px;
     background-color: aliceblue;

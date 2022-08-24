@@ -17,7 +17,7 @@
 
                     <div class="row row-margins">
                         <div class="col-12 col-md-6 .offset-md-6">
-                            <p class="mb-0 text-black font-weight-bold">Order Number</p>
+                            <p class="mb-0 text-black font-decoration">Order Number</p>
                         </div>
                         <div class="col-12 col-md-6 .offset-md-6">
                             <p class="mb-0">{{ order.order_number }}</p>
@@ -26,7 +26,7 @@
 
                     <div class="row row-margins">
                         <div class="col-12 col-md-6 .offset-md-6">
-                            <p class="mb-0 text-black font-weight-bold">Order Date</p>
+                            <p class="mb-0 text-black font-decoration">Order Date</p>
                         </div>
                         <div class="col-12 col-md-6 .offset-md-6">
                             <p class="mb-0">{{ order.date }}</p>
@@ -36,7 +36,7 @@
                     {% for item in order.lineitems.all %}
                     <div class="row row-margins">
                         <div class="col-12 col-md-6 .offset-md-6">
-                            <p class="small mb-0 text-black font-weight-bold">
+                            <p class="small mb-0 text-black font-decoration">
                                 {{ item.tour.tour_title }}
                             </p>
                         </div>
@@ -48,7 +48,7 @@
 
                     <div class="row row-margins">
                         <div class="col-12 col-md-6 .offset-md-6">
-                            <p class="mb-0 text-black font-weight-bold">Order Total</p>
+                            <p class="mb-0 text-black font-decoration">Order Total</p>
                         </div>
                         <div class="col-12 col-md-6 .offset-md-6">
                             <p class="mb-0">€{{ order.order_total }}</p>
@@ -63,7 +63,7 @@
 
                     <div class="row row-margins">
                         <div class="col-12 col-md-6 .offset-md-6">
-                            <p class="mb-0 text-black font-weight-bold">Full Name</p>
+                            <p class="mb-0 text-black font-decoration">Full Name</p>
                         </div>
                         <div class="col-12 col-md-6 .offset-md-6">
                             <p class="mb-0">{{ order.full_name }}</p>
@@ -72,7 +72,7 @@
 
                     <div class="row row-margins">
                         <div class="col-12 col-md-6 .offset-md-6">
-                            <p class="mb-0 text-black font-weight-bold">Address 1</p>
+                            <p class="mb-0 text-black font-decoration">Address 1</p>
                         </div>
                         <div class="col-12 col-md-6 .offset-md-6">
                             <p class="mb-0">{{ order.street_address1 }}</p>
@@ -82,7 +82,7 @@
                     {% if order.street_address2 %}
                     <div class="row row-margins">
                         <div class="col-12 col-md-6 .offset-md-6">
-                            <p class="mb-0 text-black font-weight-bold">Address 2</p>
+                            <p class="mb-0 text-black font-decoration">Address 2</p>
                         </div>
                         <div class="col-12 col-md-6 .offset-md-6">
                             <p class="mb-0">{{ order.street_address1 }}</p>
@@ -93,7 +93,7 @@
                     {% if order.county %}
                     <div class="row row-margins">
                         <div class="col-12 col-md-6 .offset-md-6">
-                            <p class="mb-0 text-black font-weight-bold">County</p>
+                            <p class="mb-0 text-black font-decoration">County</p>
                         </div>
                         <div class="col-12 col-md-6 .offset-md-6">
                             <p class="mb-0">{{ order.county }}</p>
@@ -103,7 +103,7 @@
 
                     <div class="row row-margins">
                         <div class="col-12 col-md-6 .offset-md-6">
-                            <p class="mb-0 text-black font-weight-bold">Town or City</p>
+                            <p class="mb-0 text-black font-decoration">Town or City</p>
                         </div>
                         <div class="col-12 col-md-6 .offset-md-6">
                             <p class="mb-0">{{ order.town_or_city }}</p>
@@ -113,7 +113,7 @@
                     {% if order.postcode %}
                     <div class="row row-margins">
                         <div class="col-12 col-md-6 .offset-md-6">
-                            <p class="mb-0 text-black font-weight-bold">Postal Code</p>
+                            <p class="mb-0 text-black font-decoration">Postal Code</p>
                         </div>
                         <div class="col-12 col-md-6 .offset-md-6">
                             <p class="mb-0">{{ order.postcode }}</p>
@@ -123,7 +123,7 @@
 
                     <div class="row row-margins">
                         <div class="col-12 col-md-6 .offset-md-6">
-                            <p class="mb-0 text-black font-weight-bold">Country</p>
+                            <p class="mb-0 text-black font-decoration">Country</p>
                         </div>
                         <div class="col-12 col-md-6 .offset-md-6">
                             <p class="mb-0">{{ order.country }}</p>
@@ -132,7 +132,7 @@
 
                     <div class="row row-margins">
                         <div class="col-12 col-md-6 .offset-md-6">
-                            <p class="mb-0 text-black font-weight-bold">Phone Number</p>
+                            <p class="mb-0 text-black font-decoration">Phone Number</p>
                         </div>
                         <div class="col-12 col-md-6 .offset-md-6">
                             <p class="mb-0">{{ order.phone_number }}</p>
@@ -146,7 +146,7 @@
                         <a href="{% url 'tours' %}" class="btn btn-primary mx-auto button-detail">Return To Tours</a>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
