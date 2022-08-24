@@ -18,7 +18,7 @@ def cache_checkout_data(request):
         pid = request.POST.get('client_secret').split('_secret')[0]
         stripe.api_key = settings.STRIPE_SECRET_KEY
         stripe.PaymentIntent.modify(pid, metadata={
-            'bag': json.dumps(request.session.get('bag', {})),
+            'basket': json.dumps(request.session.get('basket', {})),
             'save_info': request.POST.get('save_info'),
             'username': request.user,
         })
@@ -50,16 +50,21 @@ def checkout(request):
         }
         order_form = OrderForm(form_data)
         if order_form.is_valid():
-            order = order_form.save()
+            order = order_form.save(commit=False)
+            pid = request.POST.get('client_secret').split('_secret')[0]
+            order.stripe_pid = pid
+            order.original_basket = json.dumps(basket)
+            order.save()
             for tour_id, tour_data in basket.items():
                 try:
                     tour = Tour.objects.get(id=tour_id)
-                    order_line_item = OrderLineItem(
-                        order=order,
-                        tour=tour,
-                        quantity=tour_data,
-                    )
-                    order_line_item.save()
+                    if isinstance(tour_data, int):
+                        order_line_item = OrderLineItem(
+                            order=order,
+                            tour=tour,
+                            quantity=tour_data,
+                        )
+                        order_line_item.save()
                 except Tour.DoesNotExist:
                     messages.error(request, (
                         "One of the tours in your basket wasn't found in our database."
