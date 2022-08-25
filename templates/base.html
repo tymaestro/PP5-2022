@@ -90,6 +90,13 @@
           </ul>
         </div>
       </nav>
+
+          {% if messages %}
+            <div class="message-container">
+                {% for message in messages %}
+                {% endfor %}
+            </div>
+          {% endif %}
       
           <!-- Main Section jinja templating -->
           <main>
