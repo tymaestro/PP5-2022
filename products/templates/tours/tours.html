@@ -10,7 +10,7 @@
 
             <!-- Tours Iteration -->
             {% for tour in tours %}
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-4 col-sm-6 row-margins">
                 <div class="card mb-3 card-height">
                     <div class="card-body">
                         <a href="{% url 'tour_detail' tour.id %}">
@@ -21,7 +21,7 @@
                         </a>
                         <p class="card-text">Tour Guide: {{ tour.guide }}</p>
                         <hr />
-                        <p class="card-text text-muted h6">Average Speed: {{ tour.tour_speed }} km/h</p>
+                        <p class="card-text text-muted h6">Estimated Distance: {{ tour.tour_distance }} km</p>
                         <p class="card-text text-muted h6">Price: € {{ tour.tour_price }}</p>
 
                     </div>
