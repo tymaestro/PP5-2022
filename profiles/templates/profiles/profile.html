@@ -9,16 +9,58 @@
 
 <div class="row">
     <div class="col-sm-6">
-        <div class="card checkout-card">
+        <div class="card checkout-card card-info-dimensions">
             <div class="card-body">
                 <h5 class="card-title decoration">Profile Information</h5>
                 <div class="row row-margins">
 
-                    <form class="mb-3" action="{% url 'profile' %}" method="POST">
-                        {% csrf_token %}
-                        {{ form|crispy }}
-                        <button class="btn btn-primary input-margins">Update Information</button>
-                    </form>
+                    <div class="col-12 col-md-6 .offset-md-6 card-dimensions">
+                        <p class="mb-0 text-black font-decoration">Phone Number:</p>
+                    </div>
+                    <div class="col-12 col-md-6 .offset-md-6 card-dimensions">
+                        <p class="mb-0">{{ user.userprofile.default_phone_number }}</p>
+                    </div>
+                    <div class="col-12 col-md-6 .offset-md-6 card-dimensions">
+                        <p class="mb-0 text-black font-decoration">Country:</p>
+                    </div>
+                    <div class="col-12 col-md-6 .offset-md-6 card-dimensions">
+                        <p class="mb-0">{{ user.userprofile.default_country }}</p>
+                    </div>
+                    <div class="col-12 col-md-6 .offset-md-6 card-dimensions">
+                        <p class="mb-0 text-black font-decoration">Postcode:</p>
+                    </div>
+                    <div class="col-12 col-md-6 .offset-md-6 card-dimensions">
+                        <p class="mb-0">{{ user.userprofile.default_postcode }}</p>
+                    </div>
+                    <div class="col-12 col-md-6 .offset-md-6 card-dimensions">
+                        <p class="mb-0 text-black font-decoration">City:</p>
+                    </div>
+                    <div class="col-12 col-md-6 .offset-md-6 card-dimensions">
+                        <p class="mb-0">{{ user.userprofile.default_town_or_city }}</p>
+                    </div>
+                    <div class="col-12 col-md-6 .offset-md-6 card-dimensions">
+                        <p class="mb-0 text-black font-decoration">Street Address 1:</p>
+                    </div>
+                    <div class="col-12 col-md-6 .offset-md-6 card-dimensions">
+                        <p class="mb-0">{{ user.userprofile.default_street_address1 }}</p>
+                    </div>
+                    <div class="col-12 col-md-6 .offset-md-6 card-dimensions">
+                        <p class="mb-0 text-black font-decoration">Street Address 2:</p>
+                    </div>
+                    <div class="col-12 col-md-6 .offset-md-6 card-dimensions">
+                        <p class="mb-0">{{ user.userprofile.default_street_address2 }}</p>
+                    </div>
+                    <div class="col-12 col-md-6 .offset-md-6 card-dimensions">
+                        <p class="mb-0 text-black font-decoration">County:</p>
+                    </div>
+                    <div class="col-12 col-md-6 .offset-md-6 card-dimensions">
+                        <p class="mb-0">{{ user.userprofile.default_county }}</p>
+                    </div>
+                    <div class="row row-margins mx-auto">
+                        <div class="col">
+                            <a href="{% url 'update_profile' %}" class="btn btn-primary mx-auto button-detail">Update Information</a>
+                        </div>
+                    </div>
 
                 </div>
             </div>

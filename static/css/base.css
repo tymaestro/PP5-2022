@@ -100,6 +100,14 @@ form div {
     margin: 30px 0px;
 }
 
+.card-dimensions {
+    margin: 15px 0px;
+}
+
+.card-info-dimensions {
+    min-height: 529px;
+}
+
 .order-summary {
     margin-bottom: 20px;
 }

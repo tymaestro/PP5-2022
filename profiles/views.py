@@ -8,8 +8,22 @@ from .models import UserProfile
 from .forms import UserProfileForm
 
 
-@login_required
+@login_required()
 def profile(request):
+    profile = get_object_or_404(UserProfile, user=request.user)
+
+    user = request.user
+    orders = profile.orders.all()
+    template = 'profiles/profile.html'
+    context = {
+        'user': user,
+        'orders': orders,
+    }
+    return render(request, template, context)
+
+
+@login_required
+def update_profile(request):
     """ Display the user's profile. """
     profile = get_object_or_404(UserProfile, user=request.user)
 
@@ -24,12 +38,10 @@ def profile(request):
                             'the form is valid.'))
     else:
         form = UserProfileForm(instance=profile)
-    orders = profile.orders.all()
 
-    template = 'profiles/profile.html'
+    template = 'profiles/update_profile.html'
     context = {
         'form': form,
-        'orders': orders,
     }
 
     return render(request, template, context)
