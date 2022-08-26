@@ -40,16 +40,16 @@ def add_tour(request):
         form = TourForm(request.POST, request.FILES)
         if form.is_valid():
             tour = form.save()
-            messages.success(request, 'Successfully added product!')
+            messages.success(request, 'Successfully added tour!')
             return redirect(reverse('tour_detail', args=[tour.id]))
         else:
             messages.error(request,
                            ('Failed to add tour. '
                             'Please ensure the form is valid.'))
     else:
-        form = TourForm()
+        form = TourForm
 
-    template = 'products/add_tour.html'
+    template = 'tours/add_tour.html'
     context = {
         'form': form,
     }
@@ -79,7 +79,7 @@ def edit_tour(request, tour_id):
         form = TourForm(instance=tour)
         messages.info(request, f'You are editing {tour.tour_title}')
 
-    template = 'products/edit_tour.html'
+    template = 'tours/edit_tour.html'
     context = {
         'form': form,
         'tour': tour,

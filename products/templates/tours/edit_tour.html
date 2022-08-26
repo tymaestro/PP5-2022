@@ -16,7 +16,7 @@
 
                     <form class="mb-3" action="{% url 'edit_tour' tour.id %}" method="POST" enctype="multipart/form-data">
                         {% csrf_token %}
-                        {{ form_as_p }}
+                        {{ form|crispy }}
                         <button class="btn btn-primary input-margins" type="submit">Edit Tour</button>
                         <a href="{% url 'tours' %}" class="btn btn-primary">Cancel Update</a>
                     </form>
