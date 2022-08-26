@@ -14,10 +14,10 @@
                 <h5 class="card-title decoration">Tour Management</h5>
                 <div class="row row-margins">
 
-                    <form class="mb-3" action="{% url 'add_tour' %}" method="POST" enctype="multipart/form-data">
+                    <form class="mb-3" action="{% url 'edit_tour' tour.id %}" method="POST" enctype="multipart/form-data">
                         {% csrf_token %}
                         {{ form_as_p }}
-                        <button class="btn btn-primary input-margins">Add Tour</button>
+                        <button class="btn btn-primary input-margins" type="submit">Edit Tour</button>
                         <a href="{% url 'tours' %}" class="btn btn-primary">Cancel Update</a>
                     </form>
 

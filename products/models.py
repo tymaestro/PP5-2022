@@ -22,12 +22,24 @@ class Guide(models.Model):
         return self.name
 
 
+class Schedule(models.Model):
+    location = models.CharField(max_length=254, null=True, blank=True)
+    meeting_time = models.CharField(max_length=254, null=True, blank=True)
+    scheduled_day = models.CharField(max_length=254, null=True, blank=True)
+
+    def __str__(self):
+        return self.location
+
+
 class Tour(models.Model):
     level = models.ForeignKey(
         'Level', null=True, blank=True, on_delete=models.SET_NULL
         )
     guide = models.ForeignKey(
         'Guide', null=True, blank=True, on_delete=models.SET_NULL
+        )
+    schedule = models.ForeignKey(
+        'Schedule', null=True, blank=True, on_delete=models.SET_NULL
         )
     tour_title = models.CharField(max_length=254)
     tour_distance = models.PositiveSmallIntegerField()
