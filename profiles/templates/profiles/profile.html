@@ -11,70 +11,35 @@
     <div class="col-sm-6">
         <div class="card checkout-card">
             <div class="card-body">
-                <h5 class="card-title decoration">My Profile</h5>
+                <h5 class="card-title decoration">Profile Information</h5>
                 <div class="row row-margins">
-                    <div class="col-12 col-md-6 .offset-md-6">
-                        <p class="mb-0 text-black font-decoration">Username:</p>
-                    </div>
-                    <div class="col-12 col-md-6 .offset-md-6">
-                        <p class="mb-0">{{ user.username }}</p>
-                    </div>
-                </div>
-                <div class="row row-margins">
-                    <div class="col-12 col-md-6 .offset-md-6">
-                        <p class="mb-0 text-black font-decoration">Phone Number:</p>
-                    </div>
-                    <div class="col-12 col-md-6 .offset-md-6">
-                        <p class="mb-0">{{ user.phone_number }}</p>
-                    </div>
-                </div>
-                <div class="row row-margins">
-                    <div class="col-12 col-md-6 .offset-md-6">
-                        <p class="mb-0 text-black font-decoration">Address 1:</p>
-                    </div>
-                    <div class="col-12 col-md-6 .offset-md-6">
-                        <p class="mb-0">{{ user.street_address1 }}</p>
-                    </div>
-                </div>
-                <div class="row row-margins">
-                    <div class="col-12 col-md-6 .offset-md-6">
-                        <p class="mb-0 text-black font-decoration">Address 2:</p>
-                    </div>
-                    <div class="col-12 col-md-6 .offset-md-6">
-                        <p class="mb-0">{{ user.street_address2 }}</p>
-                    </div>
-                </div>
-                <div class="row row-margins">
-                    <div class="col-12 col-md-6 .offset-md-6">
-                        <p class="mb-0 text-black font-decoration">City:</p>
-                    </div>
-                    <div class="col-12 col-md-6 .offset-md-6">
-                        <p class="mb-0">{{ user.town_or_city }}</p>
-                    </div>
-                </div>
-                <div class="row row-margins">
-                    <div class="col-12 col-md-6 .offset-md-6">
-                        <p class="mb-0 text-black font-decoration">County:</p>
-                    </div>
-                    <div class="col-12 col-md-6 .offset-md-6">
-                        <p class="mb-0">{{ user.county }}</p>
-                    </div>
-                </div>
-                <div class="row row-margins">
-                    <div class="col-12 col-md-6 .offset-md-6">
-                        <p class="mb-0 text-black font-decoration">Postcode:</p>
-                    </div>
-                    <div class="col-12 col-md-6 .offset-md-6">
-                        <p class="mb-0">{{ user.postcode }}</p>
-                    </div>
-                </div>
-                <div class="row row-margins">
-                    <div class="col-12 col-md-6 .offset-md-6">
-                        <p class="mb-0 text-black font-decoration">Country:</p>
-                    </div>
-                    <div class="col-12 col-md-6 .offset-md-6">
-                        <p class="mb-0">{{ user.country }}</p>
-                    </div>
+
+                    <form class="mb-3" action="{% url 'profile' %}" method="POST">
+                        {% csrf_token %}
+                        <div class="mb-3">
+                            {{ form.default_phone_number }}
+                          </div>
+                          <div class="mb-3">
+                            {{ form.default_postcode }}
+                          </div>
+                          <div class="mb-3">
+                            {{ form.default_town_or_city }}
+                          </div>
+                          <div class="mb-3">
+                            {{ form.default_street_address1 }}
+                          </div>
+                          <div class="mb-3">
+                            {{ form.default_street_address2 }}
+                          </div>
+                          <div class="mb-3">
+                            {{ form.default_county }}
+                          </div>
+                          <div class="mb-3">
+                            {{ form.default_country }}
+                          </div>
+                        <button class="btn btn-primary">Update Information</button>
+                    </form>
+
                 </div>
             </div>
         </div>
@@ -115,7 +80,4 @@
     </div>
 </div>
 
-{% endblock %}
-
-{% block postloadjs %}
 {% endblock %}
