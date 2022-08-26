@@ -55,8 +55,7 @@ INSTALLED_APPS = [
 
     # other
 
-    # 'crispy_forms',
-    # 'crispy-bootstrap5',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -71,9 +70,9 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'biketours.urls'
 
-# CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
+CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap4'
 
-# CRISPY_TEMPLATE_PACK = 'bootstrap5'
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 TEMPLATES = [
     {

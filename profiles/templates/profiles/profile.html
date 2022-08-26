@@ -16,28 +16,8 @@
 
                     <form class="mb-3" action="{% url 'profile' %}" method="POST">
                         {% csrf_token %}
-                        <div class="mb-3">
-                            {{ form.default_phone_number }}
-                          </div>
-                          <div class="mb-3">
-                            {{ form.default_postcode }}
-                          </div>
-                          <div class="mb-3">
-                            {{ form.default_town_or_city }}
-                          </div>
-                          <div class="mb-3">
-                            {{ form.default_street_address1 }}
-                          </div>
-                          <div class="mb-3">
-                            {{ form.default_street_address2 }}
-                          </div>
-                          <div class="mb-3">
-                            {{ form.default_county }}
-                          </div>
-                          <div class="mb-3">
-                            {{ form.default_country }}
-                          </div>
-                        <button class="btn btn-primary">Update Information</button>
+                        {{ form|crispy }}
+                        <button class="btn btn-primary input-margins">Update Information</button>
                     </form>
 
                 </div>

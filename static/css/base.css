@@ -5,6 +5,10 @@ body {
     text-align: center;
 }
 
+form div {
+    margin: 15px;
+}
+
 .main-container {
     min-height: calc(100vh - 64px);
 }
