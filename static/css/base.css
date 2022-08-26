@@ -100,6 +100,10 @@ form div {
     margin: 30px 0px;
 }
 
+.hr-margin {
+    margin: 0px 20px;
+}
+
 .card-dimensions {
     margin: 15px 0px;
 }

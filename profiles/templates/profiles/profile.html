@@ -20,36 +20,42 @@
                     <div class="col-12 col-md-6 .offset-md-6 card-dimensions">
                         <p class="mb-0">{{ user.userprofile.default_phone_number }}</p>
                     </div>
+                    <hr>
                     <div class="col-12 col-md-6 .offset-md-6 card-dimensions">
                         <p class="mb-0 text-black font-decoration">Country:</p>
                     </div>
                     <div class="col-12 col-md-6 .offset-md-6 card-dimensions">
                         <p class="mb-0">{{ user.userprofile.default_country }}</p>
                     </div>
+                    <hr>
                     <div class="col-12 col-md-6 .offset-md-6 card-dimensions">
                         <p class="mb-0 text-black font-decoration">Postcode:</p>
                     </div>
                     <div class="col-12 col-md-6 .offset-md-6 card-dimensions">
                         <p class="mb-0">{{ user.userprofile.default_postcode }}</p>
                     </div>
+                    <hr>
                     <div class="col-12 col-md-6 .offset-md-6 card-dimensions">
                         <p class="mb-0 text-black font-decoration">City:</p>
                     </div>
                     <div class="col-12 col-md-6 .offset-md-6 card-dimensions">
                         <p class="mb-0">{{ user.userprofile.default_town_or_city }}</p>
                     </div>
+                    <hr>
                     <div class="col-12 col-md-6 .offset-md-6 card-dimensions">
                         <p class="mb-0 text-black font-decoration">Street Address 1:</p>
                     </div>
                     <div class="col-12 col-md-6 .offset-md-6 card-dimensions">
                         <p class="mb-0">{{ user.userprofile.default_street_address1 }}</p>
                     </div>
+                    <hr>
                     <div class="col-12 col-md-6 .offset-md-6 card-dimensions">
                         <p class="mb-0 text-black font-decoration">Street Address 2:</p>
                     </div>
                     <div class="col-12 col-md-6 .offset-md-6 card-dimensions">
                         <p class="mb-0">{{ user.userprofile.default_street_address2 }}</p>
                     </div>
+                    <hr>
                     <div class="col-12 col-md-6 .offset-md-6 card-dimensions">
                         <p class="mb-0 text-black font-decoration">County:</p>
                     </div>
@@ -58,7 +64,8 @@
                     </div>
                     <div class="row row-margins mx-auto">
                         <div class="col">
-                            <a href="{% url 'update_profile' %}" class="btn btn-primary mx-auto button-detail">Update Information</a>
+                            <a href="{% url 'update_profile' %}" class="btn btn-primary mx-auto button-detail">Update
+                                Information</a>
                         </div>
                     </div>
 
@@ -76,7 +83,8 @@
                         <p class="mb-0 text-black font-decoration">Order Number:</p>
                     </div>
                     <div class="col-12 col-md-6 .offset-md-6">
-                        <p class="mb-0">{{ order.order_number }}</p>
+                        <a href="{% url 'order_history' order.order_number %}"
+                            title="{{ order.order_number }}">{{ order.order_number|truncatechars:6 }}</a>
                     </div>
                 </div>
                 <div class="row row-margins">
