@@ -12,16 +12,20 @@ def newsletter_signup(request):
         instance = form.save(commit=False)
         if NewsletterSubscriber.objects.filter(email=instance.email).exists():
             messages.error(request,
-                           (f'The email {form.email} '
-                            f'already exists in our database'))
+                           ('Your email address '
+                            'already exists in our database'))
         else:
             instance.save()
+            messages.success(request,
+                             ('Thanks for subscribing! '
+                              'You will receive our monthly '
+                              'newsletter soon'))
 
     context = {
         'form': form,
     }
 
-    template = 'newsletter/subscription.html'
+    template = 'newsletter/signup.html'
     return render(request, template, context)
 
 
@@ -33,12 +37,12 @@ def newsletter_unsubscribe(request):
         if NewsletterSubscriber.objects.filter(email=instance.email).exists():
             NewsletterSubscriber.objects.filter(email=instance.email).delete()
             messages.success(request,
-                             (f'The email {form.email} '
-                              f'has been deleted from our database'))
+                             ('Your email '
+                              'has been deleted from our database'))
         else:
             messages.error(request,
-                           (f'The email {form.email} '
-                            f'was not found in our database'))
+                           ('The email address you provided '
+                            'was not found in our database'))
 
     context = {
         'form': form,
