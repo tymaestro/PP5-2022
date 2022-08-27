@@ -17,9 +17,15 @@
                 <span>Quantity: </span>
                 <input class="form-inline qty_input mb-2 mr-sm-2" type="number" name="quantity" value="1"
                     min="1" max="10" data-item_id="{{ tour.id }}" id="id_qty_{{ tour.id }}">
+                {% if request.user.is_superuser %}
                 <div>
-                    <input type="submit" class="btn btn-primary mx-auto mb-2 mr-sm-2 button-detail" value="Add to Basket!">
-                    <a href="{% url 'tours' %}" class="btn btn-primary mx-auto mb-2 mr-sm-2 button-detail">Add Another Tour!</a>
+                    <span><a href="{% url 'edit_tour' tour.id %}" class="control-buttons">Edit</a></span>
+                    <span><a href="{% url 'delete_tour' tour.id %}" class="control-buttons text-danger">Delete</a></span>
+                </div>
+                {% endif %}
+                <div class="mx-auto">
+                    <input type="submit" class="btn btn-primary" value="Add to Basket!">
+                    <a href="{% url 'tours' %}" class="btn btn-primary">Add Another Tour!</a>
                 </div>
                 <input type="hidden" name="redirect_url" value="{{ request.path }}">
             </form>
