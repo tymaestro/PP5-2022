@@ -100,6 +100,11 @@ form div {
     margin: 30px 0px;
 }
 
+.tour-titles {
+    text-decoration: none;
+    color: #212529d5;
+}
+
 .control-buttons {
     text-decoration: none;
     margin: 10px;
