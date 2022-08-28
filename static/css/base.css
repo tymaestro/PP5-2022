@@ -144,6 +144,11 @@ form div {
     margin: 30px;
 }
 
+footer div a i {
+    font-size: 150%;
+    margin: 10px;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 740px) {
