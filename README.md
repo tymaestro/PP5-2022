@@ -2,7 +2,7 @@
 
 Paris Tours is an e-commerce website that allows users to browse potential tours of Paris and the surrounding area. Users can add tours to their basket and checkout including all e-commerce functionality.
 
-![Responsive Pages](add responsive pages here!)
+![Responsive Pages](/media/readme/readme/responsive-image.png)
 
 
 ADD LINK TO LIVE SITE HERE!!!
@@ -21,6 +21,10 @@ As a standard (not logged-in) user, I would like to:
 2. View available tours
 
 3. Have a unique sign-up option with username and password
+
+4. Be able to purchase tours without signing up for an account
+
+5. Subscribe to the newsletter
 <br>
 <br>
 
@@ -56,9 +60,15 @@ As a registered (logged-in) user, I would like to:
 
 - Create a website for people in search of a walking or cycling tour of Paris and the suburbs. 
 
+## Facebook Screenshots
+
+![Facebook Screenshot](/media/readme/readme/facebook-screenshot.png)
+
+![Facebook Screenshot](/media/readme/readme/facebook-screenshot-2.png)
+
 ## Flowchart
 
-![Paris Tours Flowchart](ADD FLOWCHART HERE!!!)
+![Paris Tours Flowchart](/media/readme/readme/flowchart-pp5.png)
 
 ## Entity Relationship Diagram
 
@@ -126,87 +136,120 @@ The agile development of this project used issues in the project environment on 
 
 EDIT!!!
 
-The navigation bar gives you access to the products page as well as an opportunity to either login with a previously created account or create an account via the sign up option.
+The navigation bar gives you access to the tours page as well as an opportunity to either login with a previously created account or create an account via the sign up option. You can also purchase tours without creating an account and view your basket.
 
-![Navbar Logged-Out](LINK!!!)
+![Navbar Logged-Out](/media/readme/readme/navbar-notloggedin-pp5.png)
 
-The navigation bar once you are logged in gives you the opportunity to add products to your basket as well as log out of your account.
+The navigation bar once you are logged in gives you the opportunity to create an account that will store your details for future visits, have an order history with us, as well as log out of your account.
 
-![Navbar Logged-In](LINK!!!)
+![Navbar Logged-In](/media/readme/readme/navbar-detail-user-pp5.png)
+
+The navigation bar as a superuser gives you the ability to add, edit or delete tours from the database in the Tour Management section.
+
+![Navbar Superuser](/media/readme/readme/navbar-detail-superuser-pp5.png)
 
 ### Sign Up Page
 
 The sign up page allows you to create an account by providing a username and password for authentication.
 
-![Sign-Up Page](LINK!!!)
+![Sign-Up Page](/media/readme/readme/signup-detail-pp5.png)
 
 ### Login Page
 
 As with the sign up page, the login page allows previously registered users to access the extra functionality that having an account provides.
 
-![Login Page](LINK!!!)
+![Login Page](/media/readme/readme/signin-detail-pp5.png)
 
 ### Logout Page
 
 The logout page allows you to confirm if you are sure you would like to logout
 
-![Logout Page](LINK!!!)
+![Logout Page](/media/readme/readme/signout-detail-pp5.png)
 
 ### Home Page
 
-The home page welcomes users to the site and gives information on the concept behind the site and encourages you to sign-up to gain access to cool features where you can purchase products and leave reviews.
+The home page welcomes users to the site and gives information on the concept behind the site and encourages you to sign-up to gain access to features where you can create a profile and have a stored order history.
 
-![Home Page](LINK!!!)
+![Home Page](/media/readme/readme/homepage-detail-pp5.png)
 
-### Products Page
+### Tours Page
 
-This page presents an ordered and paginated list of activities posted by users. Visible is the title and excerpt of the activity. These activities are public but an account must be created to leave a comment or create your own activities. You can also search for a specific activity using the search bar at the top right of the page.
+This page presents an ordered list of tours created by the superuser.
 
-![Products Page](LINK!!!)
+![Tours Page](/media/readme/readme/tours-pp5.png)
 
-### Products Detail Page
+### Tour Detail Page
 
-The activity detail page presents the selected activtiy in detail including its title, excerpt, content and comments left by users.
+The tour detail page presents the selected tour in greater detail so users can gain more information about the tours.
 
-![Products Detail Page](LINK!!!)
+![Tour Detail Page](/media/readme/readme/tour-detail-pp5.png)
 
-### Create Review Page
+As a superuser, there is functionality to edit and delete tours
 
-The create comment page is shown as a form where you can leave a comment on the selected post.
+![Tour Detail Page Superuser](/media/readme/readme/tour-detail-superuser-pp5.png)
 
-![Create Review Page](LINK!!!)
+### Add Tour Page
 
-### Edit Review Page
+As a superuser, this page allows you to add a tour to the database.
 
-The edit activity page displays your activity as a form, pre-populated with the details and content previously provided so that you can edit your post.
+![Add Tour Page](/media/readme/readme/add-tour-top-pp5.png)
+![Add Tour Page 2](/media/readme/readme/add-tour-bottom-pp5.png)
 
-![Edit Review Page](LINK!!!)
+### Edit Tour Page
 
-### Delete Review Page
+As a superuser, this page allows you to add a tour to the database.
 
-The delete activity page displays a warning (defensive programming) to ensure that you are certain of your choice to delete the chosen activity and are aware of the consequences.
+![Edit Tour Page](/media/readme/readme/edit-tour-superuser-pp5.png)
 
-![Delete Review Page](LINK!!!)
 
-### 400 Error Page
+### Basket Page
 
-The 400 error page displays a UX-friendly error message and the option to "return to safety".
+This is a detail of the empty basket.
 
-### 403 Error Page
+![Empty Basket](/media/readme/readme/empty-basket-pp5.png)
 
-The 403 error page displays a UX-friendly error message and the option to "return to safety".
+This is a detail of a basket with items in it. The total price is calculated and there is the option to update tours or delete them from the basket, as well as an option to proceed to the checkout.
 
-![403 Error Page](LINK!!!)
+![Basket with Items](/media/readme/readme/basket-detail-pp5.png)
 
-### 404 Error Page
+### Checkout Page
 
-The 404 error page displays a UX-friendly error message and the option to "return to safety".
+The checkout page as a logged out user presents you with a summary of your basket and a form to fill out to pay for your items.
 
-![404 Error Page](LINK!!!)
+![Checkout Detail (logged out)](/media/readme/readme/checkout-detail-logged-out-pp5.png)
 
-### 500 Error Page
+The checkout page as a logged in user allows you to have the payment fields pre-filled on the form.
 
-The 500 error page displays a UX-friendly error message and the option to "return to safety".
+![Checkout Detail (logged in)](/media/readme/readme/checkout-detail-user-pp5.png)
+
+### Order Summary Page
+
+The order summary page displays a summary of your order once successful payment has been received.
+
+![Order Summary](/media/readme/readme/order-summary-pp5.png)
+
+### Profile Page
+
+The profile page allows you to view your profile details and order history. It also provides the option to unsubscribe from the newsletter.
+
+![Profile Page](/media/readme/readme/profile-detail-pp5.png)
+
+### Newsletter Pages
+
+The newsletter signup page allows you to subscribe to our newsletter by providing an email address.
+
+![Newsletter Signup](/media/readme/readme/newsletter-signup-pp5.png)
+
+The newsletter unsubscribe page allows you to unsubscribe from the newsletter if you wish by providing your email to be removed from our database.
+
+![Newsletter Unsubscribe](/media/readme/readme/newsletter-unsubscribe-pp5.png)
+
+### Footer Detail
+
+The footer displays social media links and the option to subscribe to the newsletter if you haven't already done so, or unsubscribe if you no longer wish to receive the newsletter.
+
+![Footer Detail](/media/readme/readme/footer-detail-pp5.png)
+
 
 ## Features Left To Implement
 
@@ -214,7 +257,9 @@ The 500 error page displays a UX-friendly error message and the option to "retur
 
 ## Languages Used
 
-Python 3.0
+Python
+
+JavaScript
 
 CSS
 
@@ -364,5 +409,3 @@ A very big thank you to my mentor Daisy McGirr who gave me very helpful feedback
 Also, a big thank you to the Slack community over the course of this entire module.
 
 Stack Overflow for any troubleshooting over the course of this project.
-
-Django documentation for setup, use of allauth and insight into class-based views and forms.

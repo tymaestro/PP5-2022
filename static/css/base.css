@@ -184,6 +184,10 @@ footer div a i {
     margin: 10px;
 }
 
+.footer-newsletter {
+    text-decoration: none;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 740px) {
