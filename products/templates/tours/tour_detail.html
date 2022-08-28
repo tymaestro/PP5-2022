@@ -20,7 +20,7 @@
                 {% csrf_token %}
                 <span>Quantity: </span>
                 <input class="form-inline qty_input mb-2 mr-sm-2" type="number" name="quantity" value="1"
-                    min="1" max="10" data-item_id="{{ tour.id }}" id="id_qty_{{ tour.id }}">
+                    min="1" max="10" data-tour_id="{{ tour.id }}" id="id_qty_{{ tour.id }}">
                 {% if request.user.is_superuser %}
                 <div>
                     <span><a href="{% url 'edit_tour' tour.id %}" class="control-buttons">Edit</a></span>

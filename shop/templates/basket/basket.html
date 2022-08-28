@@ -12,22 +12,40 @@
                 <h5 class="card-title">Shopping Basket</h5>
                 {% for basket_item in basket_items %}
                 <div class="table-responsive">
-                    <table class="table">
+                    <table class="table align-middle">
                         <thead>
                             <tr>
                                 <th scope="col"></th>
                                 <th scope="col">Title</th>
                                 <th scope="col">Quantity</th>
+                                <th></th>
                                 <th scope="col">Price</th>
                             </tr>
                         </thead>
                         <tbody class="table-group-divider">
                             <tr>
                                 <th scope="row" class="table-align">
-                                    <img class="img-thumbnail image-basket-detail" src="{{ basket_item.tour.tour_image.url }}" alt="">
+                                    <img class="img-thumbnail image-basket-detail"
+                                        src="{{ basket_item.tour.tour_image.url }}" alt="tour-image">
                                 </th>
                                 <td>{{ basket_item.tour.tour_title }}</td>
                                 <td>{{ basket_item.quantity }}</td>
+                                <td>
+                                    <form class="form" method="POST"
+                                        action="{% url 'update_basket' basket_item.tour_id %}">
+                                        {% csrf_token %}
+                                        <div class="form-group">
+                                            <div>
+                                                <input
+                                                    class="qty_input id_qty_{{ basket_item.tour_id }}"
+                                                    type="number" name="quantity" value="{{ basket_item.quantity }}"
+                                                    min="1" max="10" data-tour_id="{{ basket_item.tour_id }}">
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <a href="{% url 'tours' %}" class="update-link text-info"><small>Update</small></a>
+                                    <a class="delete-item text-danger" id="delete_{{ basket_item.tour_id }}"><small>Delete</small></a>
+                                </td>
                                 <td>€{{ basket_item.subtotal|floatformat:2 }}</td>
                             </tr>
                         </tbody>
@@ -58,4 +76,29 @@
 
 {% endif %}
 
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+
+<script type="text/javascript">
+    // Update quantity on click
+    $('.update-link').click(function(e) {
+        var form = $(this).prev('.update-form');
+        form.submit();
+    })
+
+    // Delete item and reload on click
+    $('.delete-item').click(function(e) {
+        var csrfToken = "{{ csrf_token }}";
+        var itemId = $(this).attr('id').split('delete_')[1];
+        var url = `/basket/delete/${itemId}/`;
+        var data = {'csrfmiddlewaretoken': csrfToken};
+
+        $.post(url, data)
+         .done(function() {
+             location.reload();
+         });
+    })
+</script>
 {% endblock %}
