@@ -4,4 +4,24 @@
 
 {% block content %}
 
+<div class="card-margin">
+    <div class="card card-body mx-auto image-detail">
+        <img class="card-img-top img-thumbnail card-detail mx-auto" src="/media/friends.jpg" alt="friends">
+        <div>
+            <h5 class="card-title welcome-message">Welcome to Paris Tours!</h5>
+            <hr>
+            <p class="card-text">We started as two friends who shared a love of both cycling and an appreciation for the
+                world around us. As we picked up some cycling buddies along the way, we thought it would be nice to show
+                them the joys of Paris. After a while we had that lightbulb moment that it might be a great idea to
+                start a touring business! We've been going from strength to strength for five years and we're delighted
+                that you've chosen our flourishing company through which you can discover the very best of Paris. Browse
+                our tours, we're sure there's one suited to you. A bientot!</p>
+            <small>James & Hannah</small>
+            <div>
+                <a href="{% url 'tours' %}" class="btn btn-primary mx-auto button-detail">Explore Tours</a>
+            </div>
+        </div>
+    </div>
+</div>
+
 {% endblock %}

@@ -14,6 +14,8 @@
         <div class="card checkout-card">
             <div class="card-body">
                 <h5 class="card-title">Checkout</h5>
+
+                <!-- Iteration through basket items -->
                 {% for basket_item in basket_items %}
                 <div class="table-responsive">
                     <table class="table">
@@ -34,6 +36,7 @@
                     </table>
                 </div>
                 {% endfor %}
+
                 <div>
                     <span class="total-alignment"><strong>Grand Total:</strong></span>
                     <span class="total">
@@ -41,6 +44,7 @@
                     </span>
                 </div>
                 <hr>
+                <!-- Link back to basket -->
                 <a href="{% url 'view_basket' %}" class="btn btn-primary">Update Basket</a>
             </div>
         </div>
@@ -49,6 +53,8 @@
         <div class="card checkout-card">
             <div class="card-body">
                 <h5 class="card-title">Please fill out the form below to complete your order</h5>
+
+                <!-- Checkout form -->
                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                     {% csrf_token %}
                     <fieldset class="rounded px-3 mb-5">
@@ -76,7 +82,7 @@
                     </fieldset>
                     <fieldset class="px-3">
                         <legend class="fieldset-label small text-black px-2">Payment</legend>
-                        <!-- A Stripe card element will go here -->
+                        <!-- Stripe card element -->
                         <div class="mb-3" id="card-element"></div>
 
                         <!-- Used to display form errors -->
@@ -93,6 +99,7 @@
 						</p>
 					</div>
                 </form>
+
             </div>
         </div>
     </div>

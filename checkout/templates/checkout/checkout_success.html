@@ -12,6 +12,8 @@
     <div class="col-sm-8 mx-auto">
         <div class="card checkout-card">
             <div class="card-body order-card">
+
+                <!-- Order Summary card displays order summary -->
                 <h5 class="card-title order-summary">Order Summary</h5>
                 <div class="img-thumbnail order-card-image">
 
@@ -54,7 +56,7 @@
                             <p class="mb-0">€{{ order.order_total }}</p>
                         </div>
                     </div>
-
+                    <!-- Billing Information -->
                     <div class="row row-margins">
                         <div class="col">
                             <span class="text-muted decoration">Billing Information</span>
@@ -140,7 +142,7 @@
                     </div>
 
                 </div>
-
+                <!-- Return to tours button -->
                 <div class="row row-margins">
                     <div class="col">
                         <a href="{% url 'tours' %}" class="btn btn-primary mx-auto button-detail">Return To Tours</a>

@@ -96,6 +96,10 @@ form div {
     padding: 10px;
 }
 
+.welcome-message {
+    margin-top: 15px;
+}
+
 .card-margin {
     margin: 30px 0px;
 }
