@@ -48,3 +48,21 @@ select:invalid,
 select option[value=""] {
     color: #aab7c4 !important;
 }
+
+/* Media Queries */
+
+@media screen and (max-width: 540px) {
+  .stripe-style-input {
+    box-sizing: border-box;
+    height: 40px;
+    max-width: 205px;
+    padding: 10px 12px;
+    margin: 3px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 1px 3px 0 #e6ebf1;
+    -webkit-transition: box-shadow 150ms ease;
+    transition: box-shadow 150ms ease;
+  }
+}

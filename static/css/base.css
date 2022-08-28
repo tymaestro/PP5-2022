@@ -63,7 +63,6 @@ form div {
 }
 
 .button-detail {
-    width: 30%;
     margin-top: 10px;
 }
 
@@ -107,6 +106,14 @@ form div {
 .tour-titles {
     text-decoration: none;
     color: #212529d5;
+}
+
+.newsletter-color {
+    color: #212529;
+}
+
+.newsletter-button {
+    margin: 10px;
 }
 
 .control-buttons {
@@ -160,11 +167,20 @@ footer div a i {
     .checkout-card {
         margin: 10px 0px 0px 0px;
     }
+
+    .button-detail {
+        width: unset;
+        margin-top: 10px;
+    }
 }
 
 @media screen and (max-width: 540px) {
     .image-detail {
         width: auto;
+    }
+
+    .card-margin {
+        margin: 30px 5px;
     }
 
     .auth-card {

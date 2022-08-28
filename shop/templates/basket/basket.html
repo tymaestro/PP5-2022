@@ -7,7 +7,7 @@
 {% if basket_items %}
 <div class="row">
     <div class="col-sm-8 mx-auto">
-        <div class="card checkout-card">
+        <div class="card checkout-card card-margin">
             <div class="card-body">
                 <h5 class="card-title">Shopping Basket</h5>
                 {% for basket_item in basket_items %}
@@ -31,18 +31,6 @@
                                 <td>{{ basket_item.tour.tour_title }}</td>
                                 <td>{{ basket_item.quantity }}</td>
                                 <td>
-                                    <form class="form" method="POST"
-                                        action="{% url 'update_basket' basket_item.tour_id %}">
-                                        {% csrf_token %}
-                                        <div class="form-group">
-                                            <div>
-                                                <input
-                                                    class="qty_input id_qty_{{ basket_item.tour_id }}"
-                                                    type="number" name="quantity" value="{{ basket_item.quantity }}"
-                                                    min="1" max="10" data-tour_id="{{ basket_item.tour_id }}">
-                                            </div>
-                                        </div>
-                                    </form>
                                     <a href="{% url 'tours' %}" class="update-link text-info"><small>Update</small></a>
                                     <a class="delete-item text-danger" id="delete_{{ basket_item.tour_id }}"><small>Delete</small></a>
                                 </td>
@@ -59,8 +47,8 @@
                     </span>
                 </div>
                 <hr>
-                <a href="{% url 'tours' %}" class="btn btn-primary">Book Another Tour</a>
-                <a href="{% url 'checkout' %}" class="btn btn-success">Proceed to Checkout</a>
+                <a href="{% url 'tours' %}" class="btn btn-primary button-detail">Book Another Tour</a>
+                <a href="{% url 'checkout' %}" class="btn btn-success button-detail">Proceed to Checkout</a>
             </div>
         </div>
     </div>

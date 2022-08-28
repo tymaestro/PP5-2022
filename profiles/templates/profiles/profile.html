@@ -9,7 +9,7 @@
 
 <div class="row">
     <div class="col-sm-6">
-        <div class="card checkout-card card-info-dimensions">
+        <div class="card checkout-card card-info-dimensions card-margin">
             <div class="card-body">
                 <h5 class="card-title decoration">Profile Information</h5>
                 <div class="row row-margins">
@@ -64,8 +64,16 @@
                     </div>
                     <div class="row row-margins mx-auto">
                         <div class="col">
-                            <a href="{% url 'update_profile' %}" class="btn btn-primary mx-auto button-detail">Update
+                            <a href="{% url 'update_profile' %}" class="btn btn-primary mx-auto newsletter-button">Update
                                 Information</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row row-margins mx-auto">
+                        <div class="col">
+                            <h4>Paris Tours Newsletter</h4>
+                            <a href="{% url 'newsletter_signup' %}" class="newsletter-color mx-auto">Subscribe</a> | 
+                            <a href="{% url 'newsletter_unsubscribe' %}" class="newsletter-color mx-auto">Unsubscribe</a>
                         </div>
                     </div>
 
@@ -74,7 +82,7 @@
         </div>
     </div>
     <div class="col-sm-6">
-        <div class="card checkout-card order-dimensions">
+        <div class="card checkout-card order-dimensions card-margin">
             <div class="card-body">
                 <h5 class="card-title decoration">Order History</h5>
                 {% for order in orders %}
