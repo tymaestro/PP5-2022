@@ -7,6 +7,7 @@
 
 {% block content %}
 
+<!-- profile information of registered users -->
 <div class="row">
     <div class="col-sm-6">
         <div class="card checkout-card card-info-dimensions card-margin">
@@ -71,6 +72,7 @@
                     <hr>
                     <div class="row row-margins mx-auto">
                         <div class="col">
+                            <!-- option to signup to the newsletter -->
                             <h4>Paris Tours Newsletter</h4>
                             <a href="{% url 'newsletter_signup' %}" class="newsletter-color mx-auto">Subscribe</a> | 
                             <a href="{% url 'newsletter_unsubscribe' %}" class="newsletter-color mx-auto">Unsubscribe</a>
@@ -84,6 +86,7 @@
     <div class="col-sm-6">
         <div class="card checkout-card order-dimensions card-margin">
             <div class="card-body">
+                <!-- order history for logged in users -->
                 <h5 class="card-title decoration">Order History</h5>
                 {% for order in orders %}
                 <div class="row row-margins">

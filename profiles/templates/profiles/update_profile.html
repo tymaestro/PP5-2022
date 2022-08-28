@@ -13,7 +13,7 @@
             <div class="card-body">
                 <h5 class="card-title decoration">Profile Information</h5>
                 <div class="row row-margins">
-
+                    <!-- form to update profile information -->
                     <form class="mb-3" action="{% url 'update_profile' %}" method="POST">
                         {% csrf_token %}
                         {{ form|crispy }}

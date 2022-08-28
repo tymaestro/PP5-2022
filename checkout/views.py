@@ -1,4 +1,7 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+""" system module """
+from django.shortcuts import (
+        render, redirect, reverse, get_object_or_404, HttpResponse
+    )
 from django.views.decorators.http import require_POST
 from django.conf import settings
 from django.contrib import messages
@@ -16,6 +19,7 @@ from profiles.forms import UserProfileForm
 
 @require_POST
 def cache_checkout_data(request):
+    """ function to cache checkout data """
     try:
         pid = request.POST.get('client_secret').split('_secret')[0]
         stripe.api_key = settings.STRIPE_SECRET_KEY
@@ -33,6 +37,7 @@ def cache_checkout_data(request):
 
 
 def checkout(request):
+    """ checkout function """
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
@@ -69,14 +74,16 @@ def checkout(request):
                         order_line_item.save()
                 except Tour.DoesNotExist:
                     messages.error(request, (
-                        "One of the tours in your basket wasn't found in our database."
+                        "One of the tours in your basket "
+                        "wasn't found in our database."
                         " Please call us for assistance!")
                     )
                     order.delete()
                     return redirect(reverse('view_basket'))
 
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('checkout_success', args=[order.order_number]))
+            return redirect(reverse('checkout_success',
+                            args=[order.order_number]))
         else:
             messages.error(request, 'There was an error with your form. \
                 Please double check your information.')

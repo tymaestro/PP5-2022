@@ -1,3 +1,4 @@
+""" system module """
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
@@ -8,6 +9,7 @@ from .forms import TourForm
 
 
 def all_tours(request):
+    """ function to view all tours """
 
     tours = Tour.objects.all()
 
@@ -19,6 +21,7 @@ def all_tours(request):
 
 
 def tour_detail(request, tour_id):
+    """ function to view tour detail """
 
     tour = get_object_or_404(Tour, pk=tour_id)
 
@@ -33,7 +36,8 @@ def tour_detail(request, tour_id):
 def add_tour(request):
     """ Add a tour to the site """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, this action is restricted to site owners.')
+        messages.error(request, 'Sorry, this action is '
+                                'restricted to site owners.')
         return redirect(reverse('home'))
 
     if request.method == 'POST':
@@ -61,7 +65,8 @@ def add_tour(request):
 def edit_tour(request, tour_id):
     """ Edit a tour on the site """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, this action is restricted to site owners.')
+        messages.error(request, 'Sorry, this action is '
+                                'restricted to site owners.')
         return redirect(reverse('home'))
 
     tour = get_object_or_404(Tour, pk=tour_id)
@@ -92,7 +97,8 @@ def edit_tour(request, tour_id):
 def delete_tour(request, tour_id):
     """ Delete a tour from the site """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, this action is restricted to site owners.')
+        messages.error(request, 'Sorry, this action is '
+                                'restricted to site owners.')
         return redirect(reverse('home'))
 
     tour = get_object_or_404(Tour, pk=tour_id)

@@ -1,3 +1,5 @@
+/* CSS for main body and navbar */
+
 body {
     background: url('/media/paris-image.jpg') no-repeat;
     background-size: cover;
@@ -5,65 +7,43 @@ body {
     text-align: center;
 }
 
-form div {
-    margin: 15px;
-}
-
 .main-container {
     min-height: calc(100vh - 64px);
 }
 
+.navbar-margin {
+    margin-left: 16px;
+}
+
+/* CSS for images */
+
 .image-detail {
     max-width: 700px;
-}
-
-.order-dimensions {
-    max-height: 529px;
-    overflow-y: auto;
-}
-
-.total {
-    text-align: right;
-    margin-right: 20px;
-}
-
-#form-dimensions {
-    max-width: 150px;
 }
 
 .tour-image-detail {
     max-width: 250px;
 }
 
-.input-margins {
-    margin: 10px;
-}
-
-.auth-card {
-    width: 50%;
-    margin-top: 100px;
-}
-
-.row-margins {
-    margin-bottom: 5px;
-}
-
-.table-align {
-    text-align: left;
-}
-
-.auth-button {
-    margin-bottom: 20px;
-}
-
-.card-detail {
-    width: 100%;
-    max-width: 400px;
+.image-basket-detail {
+    max-width: 100px;
     height: auto;
 }
 
-.button-detail {
-    margin-top: 10px;
+/* CSS for forms */
+
+form div {
+    margin: 15px;
+}
+
+#form-dimensions {
+    max-width: 150px;
+}
+
+/* CSS margin styling */
+
+.input-margins {
+    margin: 10px;
 }
 
 .basket-margin {
@@ -72,14 +52,43 @@ form div {
     margin: auto;
 }
 
-.image-basket-detail {
-    max-width: 100px;
-    height: auto;
+.row-margins {
+    margin-bottom: 5px;
 }
 
-.navbar-margin {
-    margin-left: 16px;
+/* CSS table styling */
+
+.table-align {
+    text-align: left;
 }
+
+/* CSS total styling */
+
+.total {
+    text-align: right;
+    margin-right: 20px;
+}
+
+/* CSS home page styling */
+
+.welcome-message {
+    margin-top: 15px;
+}
+
+/* CSS title decoration styling */
+
+.tour-titles {
+    text-decoration: none;
+    color: #212529d5;
+}
+
+/* CSS newsletter color styling */
+
+.newsletter-color {
+    color: #212529;
+}
+
+/* CSS for decorations */
 
 .decoration {
     text-decoration: underline;
@@ -89,31 +98,39 @@ form div {
     font-weight: bold;
 }
 
+/* CSS for order summary */
+
+.order-summary {
+    margin-bottom: 20px;
+}
+
+.order-dimensions {
+    max-height: 529px;
+    overflow-y: auto;
+}
+
+.order-card {
+    padding: 20px;
+}
+
 .order-card-image {
     border: solid black 1px;
     background-color: aliceblue;
     padding: 10px;
 }
 
-.welcome-message {
-    margin-top: 15px;
-}
-
-.card-margin {
-    margin: 30px 0px;
-}
-
-.tour-titles {
-    text-decoration: none;
-    color: #212529d5;
-}
-
-.newsletter-color {
-    color: #212529;
-}
+/* CSS for buttons */
 
 .newsletter-button {
     margin: 10px;
+}
+
+.auth-button {
+    margin-bottom: 20px;
+}
+
+.button-detail {
+    margin-top: 10px;
 }
 
 .control-buttons {
@@ -121,24 +138,29 @@ form div {
     margin: 10px;
 }
 
-.hr-margin {
-    margin: 0px 20px;
-}
+/* CSS for cards */
 
 .card-dimensions {
     margin: 15px 0px;
+}
+
+.card-detail {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.card-margin {
+    margin: 30px 0px;
 }
 
 .card-info-dimensions {
     min-height: 529px;
 }
 
-.order-summary {
-    margin-bottom: 20px;
-}
-
-.order-card {
-    padding: 20px;
+.auth-card {
+    width: 50%;
+    margin-top: 100px;
 }
 
 .card-height {
@@ -150,6 +172,12 @@ form div {
 .checkout-card {
     margin: 30px;
 }
+
+.hr-margin {
+    margin: 0px 20px;
+}
+
+/* CSS for footer */
 
 footer div a i {
     font-size: 150%;

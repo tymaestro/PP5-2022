@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect
+""" system module """
+from django.shortcuts import render
 from django.contrib import messages
 
 from .models import NewsletterSubscriber
@@ -6,6 +7,7 @@ from .forms import NewsletterSignupForm
 
 
 def newsletter_signup(request):
+    """ newsletter signup view """
     form = NewsletterSignupForm(request.POST or None)
 
     if form.is_valid():
@@ -30,6 +32,7 @@ def newsletter_signup(request):
 
 
 def newsletter_unsubscribe(request):
+    """ newsletter unsubscribe view """
     form = NewsletterSignupForm(request.POST or None)
 
     if form.is_valid():

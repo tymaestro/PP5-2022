@@ -1,9 +1,12 @@
+""" system module """
 from django import forms
 from .models import UserProfile
 
 
 class UserProfileForm(forms.ModelForm):
+    """ user profile form class """
     class Meta:
+        """ model and fields used in user profile form class """
         model = UserProfile
         exclude = ('user',)
 

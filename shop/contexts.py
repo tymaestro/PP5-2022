@@ -1,8 +1,10 @@
+""" system module """
 from django.shortcuts import get_object_or_404
 from products.models import Tour
 
 
 def basket_contents(request):
+    """ function to track items in basket """
 
     basket_items = []
     total = 0

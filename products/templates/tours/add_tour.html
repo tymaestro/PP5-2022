@@ -7,6 +7,7 @@
 
 {% block content %}
 
+<!-- Tour management for superusers -->
 <div class="row">
     <div class="col-sm-8 mx-auto">
         <div class="card checkout-card card-margin">
@@ -14,6 +15,7 @@
                 <h5 class="card-title decoration">Tour Management</h5>
                 <div class="row row-margins">
 
+                    <!-- add tour form -->
                     <form class="mb-3" action="{% url 'add_tour' %}" method="POST" enctype="multipart/form-data">
                         {% csrf_token %}
                         {{ form|crispy }}

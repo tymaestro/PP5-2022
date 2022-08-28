@@ -1,9 +1,12 @@
+""" system module """
 from django import forms
 from .models import Order
 
 
 class OrderForm(forms.ModelForm):
+    """ create an order form """
     class Meta:
+        """ fields for order form """
         model = Order
         fields = ('full_name', 'email', 'phone_number',
                   'street_address1', 'street_address2',

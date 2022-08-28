@@ -1,3 +1,4 @@
+""" system module """
 from django.shortcuts import render, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
@@ -10,6 +11,7 @@ from .forms import UserProfileForm
 
 @login_required()
 def profile(request):
+    """ function to render profile """
     profile = get_object_or_404(UserProfile, user=request.user)
 
     user = request.user
@@ -48,6 +50,7 @@ def update_profile(request):
 
 
 def order_history(request, order_number):
+    """ function to get order history """
     order = get_object_or_404(Order, order_number=order_number)
 
     messages.info(request, (
@@ -58,7 +61,6 @@ def order_history(request, order_number):
     template = 'checkout/checkout_success.html'
     context = {
         'order': order,
-        # 'from_profile': True,
     }
 
     return render(request, template, context)

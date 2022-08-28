@@ -1,14 +1,17 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+""" system module """
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 
 from products.models import Tour
 
 
 def view_basket(request):
+    """ function to view basket """
     return render(request, 'basket/basket.html')
 
 
 def add_to_basket(request, tour_id):
+    """ function to add to basket """
     tour = get_object_or_404(Tour, pk=tour_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
@@ -28,6 +31,7 @@ def add_to_basket(request, tour_id):
 
 
 def update_basket(request, tour_id):
+    """ function to update basket """
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
     basket = request.session.get('basket', {})
@@ -39,6 +43,7 @@ def update_basket(request, tour_id):
 
 
 def delete_from_basket(request, tour_id):
+    """ function to delete items from basket """
     basket = request.session.get('basket', {})
 
     basket.pop(tour_id)

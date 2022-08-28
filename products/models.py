@@ -1,7 +1,9 @@
+""" system module """
 from django.db import models
 
 
 class Level(models.Model):
+    """ level model """
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
 
@@ -10,6 +12,7 @@ class Level(models.Model):
 
 
 class Guide(models.Model):
+    """ guide model """
     name = models.CharField(max_length=254)
     certificates = models.CharField(max_length=254)
     description = models.TextField()
@@ -23,6 +26,7 @@ class Guide(models.Model):
 
 
 class Schedule(models.Model):
+    """ schedule model """
     location = models.CharField(max_length=254, null=True, blank=True)
     meeting_time = models.CharField(max_length=254, null=True, blank=True)
     scheduled_day = models.CharField(max_length=254, null=True, blank=True)
@@ -32,6 +36,7 @@ class Schedule(models.Model):
 
 
 class Tour(models.Model):
+    """ tour model """
     level = models.ForeignKey(
         'Level', null=True, blank=True, on_delete=models.SET_NULL
         )
