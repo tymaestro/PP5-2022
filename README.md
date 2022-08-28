@@ -38,27 +38,24 @@ As a registered (logged-in) user, I would like to:
 
 2. Choose from a range of tours and add them to my basket
 
-3. Add a review of my tour once it is completed
+3. Create a profile and have my details pre-filled for payment for efficiency
 
 4. View my order history
-
-5. 
-
-6. Choose a date and time for tour
-
-7. 
-
-8. 
-
-9. 
 <br>
 <br>
+
+### Superuser
+<br>
+
+As a superuser, I would like to:
+
+1. Have the ability to add, edit and delete tours without being on the django admin page
 
 ## Project Goals
 
-- Create a platform for exercise enthusiasts to come together and share their activities and passion for exercise and the outdoors. This will be achieved through CRUD functionality to create activities (with the ability to both edit and delete the chosen activity) that allow for other users to comment and interact with fellow users of the site.
+- Create a company for tourists to come together and explore the wonderful city of Paris and all it has to offer. Users of this site will be able to purchase tours that cater to all tastes. On the database side, CRUD functionality will be implemented so that superusers can create tours (with the ability to both edit and delete them as well) that allow both the business to flourish and visitors to the site to have a steady stream of updated tours at their disposal.
 
-- Create a website for people in search of a walking or cycling tour of Paris and the suburbs. 
+- Create a website for people in search of a walking or cycling tour of Paris and the suburbs. A combination of exploration, learning, and exercise.
 
 ## Facebook Screenshots
 
@@ -74,9 +71,15 @@ As a registered (logged-in) user, I would like to:
 
 ![Entity Relationship Diagram](ADD ENTITY RELATIONSHIP DIAGRAM HERE!!!)
 
-## Wireframes
+## Business Model
 
-ADD WIREFRAMES HERE!!!
+- I chose a traditional B2C (Business to Customer) site to execute this project and sell my tours to my target market. This site has a clean and user-friendly interface that allows users to flow from page to page with no obstruction to them making a purchase. 
+
+- Visitors to my site can purchase up to 10 of each tour (a limit of 10 allows tour guides to control numbers)
+
+![Business Model](/media/readme/readme/business-model-pp5.png)
+
+## Wireframes
 
 [Home Web](/media/readme/wireframes/home-wire-web.png)
 
@@ -128,13 +131,11 @@ ADD WIREFRAMES HERE!!!
 
 ## Agile Methodology
 
-The agile development of this project used issues in the project environment on [Github](ADD LINK TO USER STORIES HERE!!!)
+The agile development of this project used issues in the project environment on [Github](https://github.com/users/tymaestro/projects/2)
 
 ## Features
 
 ### Navbar
-
-EDIT!!!
 
 The navigation bar gives you access to the tours page as well as an opportunity to either login with a previously created account or create an account via the sign up option. You can also purchase tours without creating an account and view your basket.
 
@@ -253,7 +254,9 @@ The footer displays social media links and the option to subscribe to the newsle
 
 ## Features Left To Implement
 
+- A review section so users can give feedback on how they felt about the tour. This has the mutual benefit of highlighting to site owners what is working well and what can be improved and to users so that they can have a fine-tuned and fresh range of tours to choose from.
 
+- A calendar function so users can reserve a time slot in advance and company owners can know in advancce the numbers they will have for the tour
 
 ## Languages Used
 
@@ -307,7 +310,13 @@ CSS: No errors were returned when passing through the official [Jigsaw](https://
 
 ### CSS Validation
 
-[CSS Page](LINK!!!)
+Base.CSS
+
+[CSS Page](/media/readme/readme/css-validation-pp5.png)
+
+Checkout.CSS
+
+[Checkout CSS](/media/readme/readme/css-checkout-validation-pp5.png)
 
 <hr>
 
