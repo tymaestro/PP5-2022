@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://biketours-2022.herokuapp.com/</loc>
+  <lastmod>2022-08-29T17:57:14+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://biketours-2022.herokuapp.com/tours/</loc>
+  <lastmod>2022-08-29T17:57:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://biketours-2022.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2022-08-29T17:57:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://biketours-2022.herokuapp.com/accounts/login/</loc>
+  <lastmod>2022-08-29T17:57:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://biketours-2022.herokuapp.com/basket/</loc>
+  <lastmod>2022-08-29T17:57:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://biketours-2022.herokuapp.com/newsletter/signup/</loc>
+  <lastmod>2022-08-29T17:57:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://biketours-2022.herokuapp.com/newsletter/unsubscribe/</loc>
+  <lastmod>2022-08-29T17:57:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://biketours-2022.herokuapp.com/tours/14/</loc>
+  <lastmod>2022-08-29T17:57:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://biketours-2022.herokuapp.com/tours/3/</loc>
+  <lastmod>2022-08-29T17:57:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://biketours-2022.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2022-08-29T17:57:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
