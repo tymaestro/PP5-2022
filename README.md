@@ -133,6 +133,8 @@ Link to the Facebook page can be found [here](https://www.facebook.com/Paris-Tou
 
 The agile development of this project used issues in the project environment on [Github](https://github.com/users/tymaestro/projects/2)
 
+- Acceptance criteria can be found in the Github project environment with each user story
+
 ## Features
 
 ### Navbar
@@ -750,6 +752,14 @@ Using the CLI, enter the following commands to deploy to Heroku
 [Bootstrap](https://getbootstrap.com/) for some layout and styling features.
 
 [TableConvert](https://tableconvert.com/markdown-generator) for the creation of tables in markdown.
+
+[Master Code Online](https://www.youtube.com/c/LearnpythontutorialFree) for tutorials on how to build a newsletter app.
+
+[JShint](https://jshint.com/) for JavaScript validation.
+
+[Pep8](http://pep8online.com/) for Python validation.
+
+[W3C](https://validator.w3.org/) for HTML validation.
 
 ## Acknowledgements
 
