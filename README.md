@@ -294,9 +294,7 @@ Python: Several "line too long" errors were returned when passing through the of
 
 These refer to:
 
-- 
-
-- 
+- Functions that couldn't be split
 
 HTML: No errors were returned when passing through the official [W3C](https://validator.w3.org/) validator.
 
@@ -325,7 +323,10 @@ Checkout.CSS
 ### JavaScript Validation
 
 [Messages JavaScript](/media/readme/readme/jshint-message-valid-pp5.png)
+
 [Delete Function](/media/readme/readme/jshint-delete-valid-pp5.png)
+
+[Stripe Functionality](/media/readme/readme/jshint-stripe-valid-pp5.png)
 
 <hr>
 
@@ -334,59 +335,89 @@ Checkout.CSS
 #### Biketours Project
 
 [ASGI](/media/readme/pep8/asgi-biketours-pep8-pp5.png)
+
 [Settings](/media/readme/pep8/settings-biketours-pp5.png)
+
 [URLs](/media/readme/pep8/urls-biketours-pp5.png)
+
 [WSGI](/media/readme/pep8/wsgi-biketours-pp5.png)
 
 #### Checkout App
 
 [Admin](/media/readme/pep8/checkout-admin-pp5.png)
+
 [Apps](/media/readme/pep8/checkout-apps-pp5.png)
+
 [Forms](/media/readme/pep8/checkout-forms-py-pp5.png)
+
 [Models](/media/readme/pep8/checkout-models-pp5.png)
+
 [Signals](/media/readme/pep8/checkout-signals-pp5.png)
+
 [URLs](/media/readme/pep8/checkout-urls-pp5.png)
+
 [Views](/media/readme/pep8/checkout-views-pp5.png)
+
 [Webhook Handler](/media/readme/pep8/checkout-webhook-handler-pp5.png)
+
 [Webhooks](/media/readme/pep8/checkout-webhooks-pp5.png)
 
 #### Home App
 
 [Apps](/media/readme/pep8/home-apps-pp5.png)
+
 [URLs](/media/readme/pep8/home-urls-pp5.png)
+
 [Views](/media/readme/pep8/home-views-pp5.png)
 
 #### Newsletter App
 
 [Admin](/media/readme/pep8/newsletter-admin-pp5.png)
+
 [Apps](/media/readme/pep8/newsletter-apps-pp5.png)
+
 [Forms](/media/readme/pep8/newsletter-forms-pp5.png)
+
 [Models](/media/readme/pep8/newsletter-models-pp5.png)
+
 [URLs](/media/readme/pep8/newsletter-urls-pp5.png)
+
 [Views](/media/readme/pep8/newsletter-views-pp5.png)
 
 #### Products App
 
 [Admin](/media/readme/pep8/products-admin-pp5.png)
+
 [Apps](/media/readme/pep8/products-apps-pp5.png)
+
 [Forms](/media/readme/pep8/products-forms-pp5.png)
+
 [Models](/media/readme/pep8/products-models-pp5.png)
+
 [URLs](/media/readme/pep8/products-urls-pp5.png)
+
 [Views](/media/readme/pep8/products-views-pp5.png)
 
 #### Profiles App
 
 [Apps](/media/readme/pep8/profiles-apps-pp5.png)
+
 [Forms](/media/readme/pep8/profiles-forms-pp5.png)
+
 [Models](/media/readme/pep8/profiles-models-pp5.png)
+
 [URLs](/media/readme/pep8/profiles-urls-pp5.png)
+
 [Views](/media/readme/pep8/profiles-views-pp5.png)
 
 #### Shop App
 
 [Apps](/media/readme/pep8/shop-apps-pp5.png)
+
 [Contexts](/media/readme/pep8/shop-contexts-pp5.png)
+
 [URLs](/media/readme/pep8/shop-urls-pp5.png)
+
 [Views](/media/readme/pep8/shop-views-pp5.png)
 
 <hr>
@@ -400,7 +431,77 @@ Checkout.CSS
 I have used Docstrings throughout my code to identify each function and its purpose.
 <br>
 
+### Navbar (logged out)
+<br>
 
+### Navbar (logged in)
+<br>
+
+### Navbar (logged in superuser)
+<br>
+
+### Tour Page (logged out)
+<br>
+
+### Tour Page (logged in superuser)
+<br>
+
+### Tour Detail Page (logged out)
+<br>
+
+### Tour Detail Page (logged in superuser)
+<br>
+
+### Newsletter Signup Page
+<br>
+
+### Newsletter Unsubscribe Page
+<br>
+
+### Signup Page
+<br>
+
+### Login Page
+<br>
+
+### Logout Page
+<br>
+
+### Home Page
+<br>
+
+### Add Tour Page
+<br>
+
+### Edit Tour Page
+<br>
+
+### Basket Page (empty)
+<br>
+
+### Basket Page (full)
+<br>
+
+### Checkout Page (logged out)
+<br>
+
+### Checkout Page (logged in)
+<br>
+
+### Order Summary Page
+<br>
+
+### Profile Page
+<br>
+
+### Update Profile Page
+<br>
+
+### Footer Detail
+<br>
+
+### 
+<br>
 
 ## Lighthouse Accessibility
 
