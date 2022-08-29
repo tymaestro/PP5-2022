@@ -324,6 +324,9 @@ Checkout.CSS
 
 ### JavaScript Validation
 
+[Messages JavaScript](/media/readme/readme/jshint-message-valid-pp5.png)
+[Delete Function](/media/readme/readme/jshint-delete-valid-pp5.png)
+
 <hr>
 
 ### Python Validation
@@ -401,7 +404,24 @@ I have used Docstrings throughout my code to identify each function and its purp
 
 ## Lighthouse Accessibility
 
-ADD LINKS TO LIGHTHOUSE SCREENSHOTS!!!
+- Add tour pages for [mobile](/media/readme/lighthouse/add-tour-lighthouse-mobile-pp5.png) and [desktop](/media/readme/lighthouse/add-tour-lighthouse-desk-pp5.png)
+
+- Basket pages for [mobile](/media/readme/lighthouse/basket-lighthouse-mobile-pp5.png) and [desktop](/media/readme/lighthouse/basket-lighthouse-desk-pp5.png)
+
+- Checkout pages for [mobile](/media/readme/lighthouse/checkout-lighthouse-mobile-pp5.png) and [desktop](/media/readme/lighthouse/checkout-lighthouse-desk-pp5.png)
+
+- Edit tour pages for [mobile](/media/readme/lighthouse/edit-tour-lighthouse-mobile-pp5.png) and [desktop](/media/readme/lighthouse/edit-tour-lighthouse-desk-pp5.png)
+
+- Order summary pages for [mobile](/media/readme/lighthouse/order-lighthouse-mobile-pp5.png) and [desktop](/media/readme/lighthouse/order-lighthouse-desk-pp5.png)
+
+- Profile pages for [mobile](/media/readme/lighthouse/profile-lighthouse-mobile-pp5.png) and [desktop](/media/readme/lighthouse/profile-lighthouse-desk-pp5.png)
+
+- Signin pages for [mobile](/media/readme/lighthouse/signin-lighthouse-mobile-pp5.png) and [desktop](/media/readme/lighthouse/signin-lighthouse-desk-pp5.png)
+
+- Signout pages for [mobile](/media/readme/lighthouse/signout-lighthouse-mobile-pp5.png) and [desktop](/media/readme/lighthouse/signout-lighthouse-desk-pp5.png)
+
+- Sign up pages for [mobile](/media/readme/lighthouse/signup-lighthouse-mobile-pp5.png) and [desktop](/media/readme/lighthouse/signup-lighthouse-desk-pp5.png)
+
 
 ## Bug Fixes
 
