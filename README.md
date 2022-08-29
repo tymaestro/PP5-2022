@@ -211,7 +211,7 @@ This is a detail of the empty basket.
 
 ![Empty Basket](/media/readme/readme/empty-basket-pp5.png)
 
-This is a detail of a basket with items in it. The total price is calculated and there is the option to update tours or delete them from the basket, as well as an option to proceed to the checkout.
+This is a detail of a basket with items in it. The total price is calculated and there is the option to update tours or delete them from the basket, as well as an option to proceed to the checkout. The update button brings you back to the tours page so you can more of the same tour or a different one. The delete button allows you to remove the chosen tour.
 
 ![Basket with Items](/media/readme/readme/basket-detail-pp5.png)
 
@@ -260,7 +260,7 @@ The footer displays social media links and the option to subscribe to the newsle
 
 - A calendar function so users can reserve a time slot in advance and company owners can know in advancce the numbers they will have for the tour.
 
-- Incorporate more guide and schedule information from the models on the front-end.
+- Incorporate more of the guide and schedule information from the models on the front-end.
 
 - Expand the newsletter subscription so subscribers can receive a monthly newsletter.
 
