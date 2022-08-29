@@ -20,8 +20,8 @@ def newsletter_signup(request):
             instance.save()
             messages.success(request,
                              ('Thanks for subscribing! '
-                              'You will receive our monthly '
-                              'newsletter soon'))
+                              'Your email address has been added '
+                              'to our mailing list'))
 
     context = {
         'form': form,

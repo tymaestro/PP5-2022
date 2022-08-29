@@ -162,8 +162,8 @@ def checkout_success(request, order_number):
                 user_profile_form.save()
 
     messages.success(request, f'Order successfully processed! \
-        Your order number is {order_number}. A confirmation \
-        email will be sent to {order.email}.')
+        Your order number is {order_number}. Create an account \
+            to keep track of your order history.')
 
     if 'basket' in request.session:
         del request.session['basket']
