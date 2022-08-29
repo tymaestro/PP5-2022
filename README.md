@@ -26,7 +26,6 @@ As a standard (not logged-in) user, I would like to:
 
 5. Subscribe to the newsletter
 <br>
-<br>
 
 ### Logged-In User
 <br>
@@ -41,7 +40,6 @@ As a registered (logged-in) user, I would like to:
 3. Create a profile and have my details pre-filled for payment for efficiency
 
 4. View my order history
-<br>
 <br>
 
 ### Superuser
@@ -294,7 +292,9 @@ Python: Several "line too long" errors were returned when passing through the of
 
 These refer to:
 
-- Functions that couldn't be split
+- AUTH_PASSWORD_VALIDATORS in settings.py
+
+- f-strings in webhooks and webhook_handlers
 
 HTML: No errors were returned when passing through the official [W3C](https://validator.w3.org/) validator.
 
