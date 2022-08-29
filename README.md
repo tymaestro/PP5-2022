@@ -761,6 +761,8 @@ Using the CLI, enter the following commands to deploy to Heroku
 
 [W3C](https://validator.w3.org/) for HTML validation.
 
+[Pexels](https://www.pexels.com/) for all images used on the site.
+
 ## Acknowledgements
 
 A very big thank you to my mentor Daisy McGirr who gave me very helpful feedback and was very encouraging during our mentor sessions.
