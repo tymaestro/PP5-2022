@@ -69,7 +69,7 @@ Link to the Facebook page can be found [here](https://www.facebook.com/Paris-Tou
 
 ## Entity Relationship Diagram
 
-![Entity Relationship Diagram](ADD ENTITY RELATIONSHIP DIAGRAM HERE!!!)
+![Entity Relationship Diagram](/media/readme/readme/erd-pp5.png)
 
 ## Business Model
 
@@ -306,7 +306,7 @@ CSS: No errors were returned when passing through the official [Jigsaw](https://
 
 ### HTML Validation
 
-
+[HTML Validation](/media/readme/readme/html-valid-pp5.png)
 
 <hr>
 
