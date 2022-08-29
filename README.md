@@ -59,9 +59,11 @@ As a superuser, I would like to:
 
 ## Facebook Screenshots
 
-![Facebook Screenshot](/media/readme/readme/facebook-screenshot.png)
+![Facebook Screenshot](/media/readme/readme/facebook-home-pp5.png)
 
-![Facebook Screenshot](/media/readme/readme/facebook-screenshot-2.png)
+![Facebook Screenshot](/media/readme/readme/facebook-post-pp5.png)
+
+Link to the Facebook page can be found [here](https://www.facebook.com/Paris-Tours-105734778937431)
 
 ## Flowchart
 
@@ -322,15 +324,63 @@ Checkout.CSS
 
 ### Python Validation
 
-#### Shop Project
+#### Biketours Project
 
-[Activities URLS Page](/media/readme/pythonvalidation/activities-urls-valid.png)
+[ASGI](/media/readme/pep8/asgi-biketours-pep8-pp5.png)
+[Settings](/media/readme/pep8/settings-biketours-pp5.png)
+[URLs](/media/readme/pep8/urls-biketours-pp5.png)
+[WSGI](/media/readme/pep8/wsgi-biketours-pp5.png)
 
-[Activities ASGI Page](/media/readme/pythonvalidation/asgi-valid.png)
+#### Checkout App
 
-[Activities Settings Page](/media/readme/pythonvalidation/settings-valid.png)
+[Admin](/media/readme/pep8/checkout-admin-pp5.png)
+[Apps](/media/readme/pep8/checkout-apps-pp5.png)
+[Forms](/media/readme/pep8/checkout-forms-py-pp5.png)
+[Models](/media/readme/pep8/checkout-models-pp5.png)
+[Signals](/media/readme/pep8/checkout-signals-pp5.png)
+[URLs](/media/readme/pep8/checkout-urls-pp5.png)
+[Views](/media/readme/pep8/checkout-views-pp5.png)
+[Webhook Handler](/media/readme/pep8/checkout-webhook-handler-pp5.png)
+[Webhooks](/media/readme/pep8/checkout-webhooks-pp5.png)
 
-[Activities WSGI Page](/media/readme/pythonvalidation/wsgi-valid.png)
+#### Home App
+
+[Apps](/media/readme/pep8/home-apps-pp5.png)
+[URLs](/media/readme/pep8/home-urls-pp5.png)
+[Views](/media/readme/pep8/home-views-pp5.png)
+
+#### Newsletter App
+
+[Admin](/media/readme/pep8/newsletter-admin-pp5.png)
+[Apps](/media/readme/pep8/newsletter-apps-pp5.png)
+[Forms](/media/readme/pep8/newsletter-forms-pp5.png)
+[Models](/media/readme/pep8/newsletter-models-pp5.png)
+[URLs](/media/readme/pep8/newsletter-urls-pp5.png)
+[Views](/media/readme/pep8/newsletter-views-pp5.png)
+
+#### Products App
+
+[Admin](/media/readme/pep8/products-admin-pp5.png)
+[Apps](/media/readme/pep8/products-apps-pp5.png)
+[Forms](/media/readme/pep8/products-forms-pp5.png)
+[Models](/media/readme/pep8/products-models-pp5.png)
+[URLs](/media/readme/pep8/products-urls-pp5.png)
+[Views](/media/readme/pep8/products-views-pp5.png)
+
+#### Profiles App
+
+[Apps](/media/readme/pep8/profiles-apps-pp5.png)
+[Forms](/media/readme/pep8/profiles-forms-pp5.png)
+[Models](/media/readme/pep8/profiles-models-pp5.png)
+[URLs](/media/readme/pep8/profiles-urls-pp5.png)
+[Views](/media/readme/pep8/profiles-views-pp5.png)
+
+#### Shop App
+
+[Apps](/media/readme/pep8/shop-apps-pp5.png)
+[Contexts](/media/readme/pep8/shop-contexts-pp5.png)
+[URLs](/media/readme/pep8/shop-urls-pp5.png)
+[Views](/media/readme/pep8/shop-views-pp5.png)
 
 <hr>
 
