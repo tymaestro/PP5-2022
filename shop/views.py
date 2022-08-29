@@ -30,18 +30,6 @@ def add_to_basket(request, tour_id):
     return redirect(redirect_url)
 
 
-def update_basket(request, tour_id):
-    """ function to update basket """
-    quantity = int(request.POST.get('quantity'))
-    redirect_url = request.POST.get('redirect_url')
-    basket = request.session.get('basket', {})
-
-    basket[tour_id] = quantity
-    request.session['basket'] = basket
-
-    return redirect(redirect_url)
-
-
 def delete_from_basket(request, tour_id):
     """ function to delete items from basket """
     basket = request.session.get('basket', {})

@@ -9,4 +9,4 @@ class TourForm(forms.ModelForm):
     class Meta:
         """ fields for tour management form """
         model = Tour
-        fields = '__all__'
+        exclude = ('schedule',)

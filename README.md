@@ -260,7 +260,9 @@ The footer displays social media links and the option to subscribe to the newsle
 
 - A calendar function so users can reserve a time slot in advance and company owners can know in advancce the numbers they will have for the tour.
 
-- Incorporate more guide and schedule information on the front-end.
+- Incorporate more guide and schedule information from the models on the front-end.
+
+- Expand the newsletter subscription so subscribers can receive a monthly newsletter.
 
 ## Languages Used
 
