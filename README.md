@@ -434,71 +434,236 @@ I have used Docstrings throughout my code to identify each function and its purp
 ### Navbar (logged out)
 <br>
 
+| Tests | Description                               | Expected Result                | Final Result |
+|-------|-------------------------------------------|--------------------------------|--------------|
+| 1     | Click the Paris Tours title on the navbar | Directed to the home page      | Successful   |
+| 2     | Click the home button on the navbar       | Directed to the home page      | Successful   |
+| 3     | Click the tours button on the navbar      | Directed to the tours page     | Successful   |
+| 4     | Click the signup button on the navbar     | Directed to the signup page    | Successful   |
+| 5     | Click the login button on the navbar      | Directed to the login page     | Successful   |
+| 6     | Click the my basket button on the navbar  | Directed to the my basket page | Successful   |
+
 ### Navbar (logged in)
 <br>
+
+| Tests | Description                               | Expected Result                 | Final Result |
+|-------|-------------------------------------------|---------------------------------|--------------|
+| 1     | Click the Paris Tours title on the navbar | Directed to the home page       | Successful   |
+| 2     | Click the home button on the navbar       | Directed to the home page       | Successful   |
+| 3     | Click the tours button on the navbar      | Directed to the tours page      | Successful   |
+| 4     | Click the signup button on the navbar     | Directed to the signup page     | Successful   |
+| 5     | Click the login button on the navbar      | Directed to the login page      | Successful   |
+| 6     | Click the my basket button on the navbar  | Directed to the my basket page  | Successful   |
+| 7     | Click the my profile button               | Directed to the my profile page | Successful   |
+
 
 ### Navbar (logged in superuser)
 <br>
 
+| Tests | Description                               | Expected Result                      | Final Result |
+|-------|-------------------------------------------|--------------------------------------|--------------|
+| 1     | Click the Paris Tours title on the navbar | Directed to the home page            | Successful   |
+| 2     | Click the home button on the navbar       | Directed to the home page            | Successful   |
+| 3     | Click the tours button on the navbar      | Directed to the tours page           | Successful   |
+| 4     | Click the signup button on the navbar     | Directed to the signup page          | Successful   |
+| 5     | Click the login button on the navbar      | Directed to the login page           | Successful   |
+| 6     | Click the my basket button on the navbar  | Directed to the my basket page       | Successful   |
+| 7     | Click the my profile button               | Directed to the my profile page      | Successful   |
+| 8     | Click the tour management button          | Directed to the tour management page | Successful   |
+
+
 ### Tour Page (logged out)
 <br>
+
+| Tests | Description   | Expected Result                  | Final Result |
+|-------|---------------|----------------------------------|--------------|
+| 1     | Select a tour | Directed to the tour detail page | Successful   |
+
 
 ### Tour Page (logged in superuser)
 <br>
 
+| Tests | Description             | Expected Result                  | Final Result |
+|-------|-------------------------|----------------------------------|--------------|
+| 1     | Select a tour           | Directed to the tour detail page | Successful   |
+| 2     | Click the edit button   | Directed to the edit tour page   | Successful   |
+| 3     | Click the delete button | Deletes a tour                   | Successful   |
+
+
 ### Tour Detail Page (logged out)
 <br>
+
+| Tests | Description                       | Expected Result                                                     | Final Result |
+|-------|-----------------------------------|---------------------------------------------------------------------|--------------|
+| 1     | Click the add another tour button | Directed to the tour page                                           | Successful   |
+| 2     | Click the add to basket button    | A tour is added to the basket and confirmation message is displayed | Successful   |
+| 3     | Click the quantity arrows         | Quantity of chosen tours is increased or decreased                  | Successful   |
+
 
 ### Tour Detail Page (logged in superuser)
 <br>
 
+| Tests | Description                       | Expected Result                                                     | Final Result |
+|-------|-----------------------------------|---------------------------------------------------------------------|--------------|
+| 1     | Click the add another tour button | Directed to the tour page                                           | Successful   |
+| 2     | Click the add to basket button    | A tour is added to the basket and confirmation message is displayed | Successful   |
+| 3     | Click the quantity arrows         | Quantity of chosen tours is increased or decreased                  | Successful   |
+| 4     | Click the edit button             | Directed to the edit tour page                                      | Successful   |
+| 5     | Click the delete button           | Deletes a tour                                                      | Successful   |
+
+
 ### Newsletter Signup Page
 <br>
+
+| Tests | Description                                              | Expected Result                         | Final Result |
+|-------|----------------------------------------------------------|-----------------------------------------|--------------|
+| 1     | Click the subscribe button without a valid email address | Notified to fill in required field      | Successful   |
+| 2     | Click the subscribe button with a valid email address    | Email address is stored in the database | Successful   |
+
 
 ### Newsletter Unsubscribe Page
 <br>
 
+| Tests | Description                                                | Expected Result                            | Final Result |
+|-------|------------------------------------------------------------|--------------------------------------------|--------------|
+| 1     | Click the unsubscribe button without a valid email address | Notified to fill in required field         | Successful   |
+| 2     | Click the unsubscribe button with a valid email address    | Email address is removed from the database | Successful   |
+
+
 ### Signup Page
 <br>
+
+| Tests | Description                                                     | Expected Result                     | Final Result |
+|-------|-----------------------------------------------------------------|-------------------------------------|--------------|
+| 1     | Click sign\-in link in description                              | Directed to the sign\-in page       | Successful   |
+| 2     | Click the Sign Up button without required username and password | Notified to fill in required fields | Successful   |
+| 3     | Click the Sign Up button with required fields filled            | Directed to logged\-in homepage     | Successful   |
 
 ### Login Page
 <br>
 
+| Tests | Description                                                     | Expected Result                     | Final Result |
+|-------|-----------------------------------------------------------------|-------------------------------------|--------------|
+| 1     | Click sign\-up link in description                              | Directed to the sign\-up page       | Successful   |
+| 2     | Click the Sign In button without required username and password | Notified to fill in required fields | Successful   |
+| 3     | Click the Sign In button with required fields filled            | Directed to logged\-in homepage     | Successful   |
+
 ### Logout Page
 <br>
+
+| Tests | Description           | Expected Result                     | Final Result |
+|-------|-----------------------|-------------------------------------|--------------|
+| 1     | Click Sign Out button | Directed to the logged out homepage | Successful   |
 
 ### Home Page
 <br>
 
-### Add Tour Page
+| Tests | Description                    | Expected Result            | Final Result |
+|-------|--------------------------------|----------------------------|--------------|
+| 1     | Click the explore tours button | Directed to the tours page | Successful   |
+
+### Add Tour Page (superuser)
 <br>
 
-### Edit Tour Page
+| Tests | Description                                                 | Expected Result                      | Final Result |
+|-------|-------------------------------------------------------------|--------------------------------------|--------------|
+| 1     | Click the cancel update button                              | Directed to the tours page           | Successful   |
+| 2     | Click the add tour button without required fields           | Notified to fill in required fields  | Successful   |
+| 3     | Click the add tour button with required fields but no image | Tour is created with default noimage | Successful   |
+| 4     | Click the add tour button with required fields and image    | Tour is created with chosen image    | Successful   |
+
+
+### Edit Tour Page (superuser)
 <br>
+
+| Tests | Description                                                  | Expected Result                      | Final Result |
+|-------|--------------------------------------------------------------|--------------------------------------|--------------|
+| 1     | Click the cancel update button                               | Directed to the tours page           | Successful   |
+| 2     | Click the edit tour button without required fields           | Notified to fill in required fields  | Successful   |
+| 3     | Click the edit tour button with required fields but no image | Tour is updated with default noimage | Successful   |
+| 4     | Click the edit tour button with required fields and image    | Tour is updated with chosen image    | Successful   |
+
 
 ### Basket Page (empty)
 <br>
 
+| Tests | Description                  | Expected Result           | Final Result |
+|-------|------------------------------|---------------------------|--------------|
+| 1     | Click the book a tour button | Directed to the tour page | Successful   |
+
+
 ### Basket Page (full)
 <br>
+
+| Tests | Description                          | Expected Result                                      | Final Result |
+|-------|--------------------------------------|------------------------------------------------------|--------------|
+| 1     | Click the book a tour button         | Directed to the tour page                            | Successful   |
+| 2     | Click the update button              | Directed to the tours page to update basket quantity | Successful   |
+| 3     | Click the delete button              | Deletes tour from basket                             | Successful   |
+| 4     | Click the proceed to checkout button | Directed to the checkout page                        | Successful   |
+
 
 ### Checkout Page (logged out)
 <br>
 
+| Tests | Description                                                                    | Expected Result                                                                | Final Result |
+|-------|--------------------------------------------------------------------------------|--------------------------------------------------------------------------------|--------------|
+| 1     | Click the update basket button                                                 | Directed to the basket page                                                    | Successful   |
+| 2     | Click the complete order button without the required fields                    | Notified to fill in required fields before proceeding                          | Successful   |
+| 3     | Click the complete order button with the required fields and valid card number | Directed to the order summary page and notified that your order was successful | Successful   |
+| 4     | Click the create an account link                                               | Directed to the signup page                                                    | Successful   |
+| 5     | Click the login link                                                           | Directed to the login page                                                     | Successful   |
+
+
 ### Checkout Page (logged in)
 <br>
+
+| Tests | Description                                                                    | Expected Result                                                                | Final Result |
+|-------|--------------------------------------------------------------------------------|--------------------------------------------------------------------------------|--------------|
+| 1     | Click the update basket button                                                 | Directed to the basket page                                                    | Successful   |
+| 2     | Click the complete order button without the required fields                    | Notified to fill in required fields before proceeding                          | Successful   |
+| 3     | Click the complete order button with the required fields and valid card number | Directed to the order summary page and notified that your order was successful | Successful   |
+| 4     | Click the create an account link                                               | Directed to the signup page                                                    | Successful   |
+| 5     | Click the login link                                                           | Directed to the login page                                                     | Successful   |
+| 6     | Pre-filled order form                                                          | Order form is pre-filled with profile information                              | Successful   |
+
 
 ### Order Summary Page
 <br>
 
+| Tests | Description                      | Expected Result            | Final Result |
+|-------|----------------------------------|----------------------------|--------------|
+| 1     | Click the return to tours button | Directed to the tours page | Successful   |
+
+
 ### Profile Page
 <br>
+
+| Tests | Description                            | Expected Result                             | Final Result |
+|-------|----------------------------------------|---------------------------------------------|--------------|
+| 1     | Click the update information button    | Directed to the edit profile page           | Successful   |
+| 2     | Click the subscribe button             | Directed to the newsletter signup page      | Successful   |
+| 3     | Click the unsubscribe button           | Directed to the newsletter unsubscribe page | Successful   |
+| 4     | Click an order number in order history | Directed to the selected order summary page | Successful   |
+
 
 ### Update Profile Page
 <br>
 
+| Tests | Description                         | Expected Result                                             | Final Result |
+|-------|-------------------------------------|-------------------------------------------------------------|--------------|
+| 1     | Click the update information button | Notified that the information has been successfully updated | Successful   |
+| 2     | Click the return to profile button  | Directed to the profile page                                | Successful   |
+
+
 ### Footer Detail
 <br>
+
+| Tests | Description            | Expected Result                                          | Final Result |
+|-------|------------------------|----------------------------------------------------------|--------------|
+| 1     | Click Facebook button  | Directed to Paris Tours Facebook page in separate tab    | Successful   |
+| 2     | Click Instagram button | Directed to Instagram homepage in a separate tab         | Successful   |
+| 3     | Click Twitter button   | Directed to Twitter homepage in a separate tab           | Successful   |
 
 ### 
 <br>
