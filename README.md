@@ -322,6 +322,10 @@ Checkout.CSS
 
 <hr>
 
+### JavaScript Validation
+
+<hr>
+
 ### Python Validation
 
 #### Biketours Project
