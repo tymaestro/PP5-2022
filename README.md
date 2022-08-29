@@ -258,7 +258,9 @@ The footer displays social media links and the option to subscribe to the newsle
 
 - A review section so users can give feedback on how they felt about the tour. This has the mutual benefit of highlighting to site owners what is working well and what can be improved and to users so that they can have a fine-tuned and fresh range of tours to choose from.
 
-- A calendar function so users can reserve a time slot in advance and company owners can know in advancce the numbers they will have for the tour
+- A calendar function so users can reserve a time slot in advance and company owners can know in advancce the numbers they will have for the tour.
+
+- Incorporate more guide and schedule information on the front-end.
 
 ## Languages Used
 
@@ -691,15 +693,18 @@ I have used Docstrings throughout my code to identify each function and its purp
 - Sign up pages for [mobile](/media/readme/lighthouse/signup-lighthouse-mobile-pp5.png) and [desktop](/media/readme/lighthouse/signup-lighthouse-desk-pp5.png)
 
 
+## Known Bugs
+
+- I encountered a minor bug when using Bootstrap for the hamburger icon for smaller screen sizes. The dropdown menu opens perfectly but it won't close again. I believe I have matched my navbar code to the Bootstrap documentation but the menu won't collapse again.
+
+- I could not send emails for verification so I added ACCOUNT_EMAIL_VERIFICATION = 'none' in settings.py. If I kept verification on I could still verify credentials in the admin panel.
+
 ## Bug Fixes
 
-- 
+- I encountered an issue when testing the live site that meant the home page image would not display even though it was in AWS. When inspecting the page, I found that the file path did not include the AWS URL so I inserted it directly into the code.
 
-- 
+- The live site on Heroku threw a 500 error when I deployed even though it worked on a previous deployment. I cleared the cache, did a hard reload and got the site working.
 
-- 
-
-- 
 
 ## Deployment
 
@@ -725,9 +730,9 @@ I have used Docstrings throughout my code to identify each function and its purp
 
 10. Ensure to create a Procfile and add web: gunicorn activities.wsgi to this file
 
-11. Make sure that the DEBUG flag is set to False in settings.py file in Gitpod
+11. Make sure that the DEBUG flag is set to DEBUG = 'DEVELOPMENT' in os.environ in settings.py file in Gitpod
 
-12. Add X_FRAME OPTIONS = 'SAMEORIGIN' to the settings.py file to ensure that the Summernote editor works once the project is deployed.
+12. Add STRIPE_PUBLIC_KEY, STRIPE_SECRET_KEY, STRIPE_WH_SECRET, AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY and USE_AWS to config vars on Heroku
 
 13. Make sure that all dependencies have been added to the requirements.txt file using the command pip3 freeze > requirements.txt
 

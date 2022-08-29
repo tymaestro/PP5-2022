@@ -215,8 +215,18 @@ footer div a i {
         margin: 30px 5px;
     }
 
+    .error-margin {
+        margin: 0px 5px;
+    }
+
     .auth-card {
         width: 98%;
         margin-top: 60px;
+    }
+
+    .basket-margin {
+        padding-top: 150px;
+        width: 65%;
+        margin: auto;
     }
 }
