@@ -16,7 +16,10 @@
             <hr>
             <h5 class="card-title">{{ tour.tour_title }}</h5>
             <p class="card-text">{{ tour.tour_description }}</p>
-            <p class="card-text">Tour Guide: {{ tour.guide }} | Price: €{{ tour.tour_price }}</p>
+            <p class="card-text">Meet at: {{ tour.schedule.location }} | Day: {{ tour.schedule.scheduled_day }} | Time: {{ tour.schedule.meeting_time }}</p>
+            <p class="card-text">Tour Guide: {{ tour.guide }} | Nationality: {{ tour.guide.nationality }}</p>
+            <p class="card-text">Years of tour experience: {{ tour.guide.experience }}</p>
+            <p class="card-text">Price: €{{ tour.tour_price }}</p>
             <form class="form-inline" action="{% url 'add_to_basket' tour.id %}" method="POST">
                 {% csrf_token %}
                 <span>Quantity: </span>
