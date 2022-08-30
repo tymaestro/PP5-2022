@@ -701,6 +701,8 @@ I have used Docstrings throughout my code to identify each function and its purp
 
 - I could not send emails for verification so I added ACCOUNT_EMAIL_VERIFICATION = 'none' in settings.py. If I kept verification on I could still verify credentials in the admin panel.
 
+- Favicon images are in AWS but do not appear to be displaying on the live site
+
 ## Bug Fixes
 
 - I encountered an issue when testing the live site that meant the home page image would not display even though it was in AWS. When inspecting the page, I found that the file path did not include the AWS URL so I inserted it directly into the code.
