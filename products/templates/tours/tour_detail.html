@@ -10,7 +10,7 @@
         {% if tour.tour_image %}
         <img class="card-img-top img-thumbnail card-detail mx-auto" src="{{ tour.tour_image.url }}" alt="{{ tour.tour_title }}">
         {% else %}
-        <img class="card-img-top img-thumbnail card-detail mx-auto" src="{{ MEDIA_URL }}noimage.png">
+        <img class="card-img-top img-thumbnail card-detail mx-auto" src="{{ MEDIA_URL }}noimage.png" alt="{{ tour.tour_title }}">
         {% endif %}
         <div>
             <hr>
