@@ -9,4 +9,6 @@ class TourForm(forms.ModelForm):
     class Meta:
         """ fields for tour management form """
         model = Tour
-        exclude = ('schedule',)
+        exclude = ('schedule', )
+    tour_image = forms.ImageField(label='Tour Image',
+                                  required=True,)
