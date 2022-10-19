@@ -1,11 +1,12 @@
 # Paris Tours
 
+The live link can be found here: [Paris Tours](https://biketours-2022.herokuapp.com/)
+<br>
+
 Paris Tours is an e-commerce website that allows users to browse potential tours of Paris and the surrounding area. Users can add tours to their basket and checkout including all e-commerce functionality.
 
 ![Responsive Pages](/media/readme/readme/responsive-image.png)
-
-
-Live link can be found [here](https://biketours-2022.herokuapp.com/)
+<br>
 
 ## User Stories
 <br>
